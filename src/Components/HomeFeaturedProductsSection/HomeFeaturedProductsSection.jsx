@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Heart, ShoppingCart, Eye } from "lucide-react";
 import tozo1 from "../../assets/tozo1.png";
 import a21 from "../../assets/a21.png";
@@ -10,6 +11,7 @@ import seventh from "../../assets/seventh.png";
 import promotion from "../../assets/promotion.png";
 
 export default function HomeFeaturedProductsSection() {
+  const navigate = useNavigate();
   const products = [
     {
       id: 1,
@@ -17,6 +19,11 @@ export default function HomeFeaturedProductsSection() {
       price: `25,000 EGP`,
       image: tozo1,
       category: `Headphones`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
     },
     {
       id: 2,
@@ -24,6 +31,11 @@ export default function HomeFeaturedProductsSection() {
       price: `23,000 EGP`,
       image: seventh,
       category: `TV's`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
     },
     {
       id: 3,
@@ -31,6 +43,11 @@ export default function HomeFeaturedProductsSection() {
       price: `19,000 EGP`,
       image: third,
       category: `Laptops`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
     },
     {
       id: 4,
@@ -39,6 +56,11 @@ export default function HomeFeaturedProductsSection() {
       image: fourth,
       category: `Cases`,
       discount: `39,000`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
     },
     {
       id: 5,
@@ -46,6 +68,11 @@ export default function HomeFeaturedProductsSection() {
       price: `18,000 EGP`,
       image: fifth,
       category: `Consoles`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
     },
     {
       id: 6,
@@ -54,8 +81,18 @@ export default function HomeFeaturedProductsSection() {
       image: sixth,
       category: `Smartphones`,
       discount: `24,000`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
     },
   ];
+
+  
+  const handleProductClick = (product) => {
+    navigate(`/product/${product.id}`, { state: { product } });
+  };
 
   return (
     <section className="py-5 px-4 sm:px-8 lg:px-16">
@@ -111,28 +148,53 @@ export default function HomeFeaturedProductsSection() {
               {products.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white rounded-lg overflow-hidden shadow-lg group"
+                  onClick={() => handleProductClick(product)}
+                  className="bg-white rounded-lg overflow-hidden shadow-lg group relative cursor-pointer"
                 >
                   <div className="relative h-64">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
+                    {/* Action Buttons */}
+                    <div className="absolute top-5 right-4 flex flex-col gap-2 transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
+                      <button className="bg-white p-2 rounded-full shadow-md hover:bg-orange-500 hover:text-white transition-colors">
+                        <Heart size={20} />
+                      </button>
+                      <button className="bg-white p-2 rounded-full shadow-md hover:bg-orange-500 hover:text-white transition-colors">
+                        <ShoppingCart size={20} />
+                      </button>
+                      <button className="bg-white p-2 rounded-full shadow-md hover:bg-orange-500 hover:text-white transition-colors">
+                        <Eye size={20} />
+                      </button>
+                    </div>
+                    {product.discount && (
+                      <span className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-sm text-sm">
+                        Sale
+                      </span>
+                    )}
                   </div>
                   {/* Product Info */}
                   <div className="p-4">
-                    <div className="text-sm font-semibold text-gray-600">
+                    <div className="text-sm font-semibold text-gray-600 mb-1">
                       {product.category}
                     </div>
-                    <h3 className="font-bold h-[5rem] pt-1 pb-1 text-[0.9rem] text-gray-800 heading-font">
+                    <h3 className="font-bold h-[5rem] text-[0.9rem] text-gray-800 heading-font">
                       {product.name.split(" ").slice(0, 10).join(" ") +
                         (product.name.split(" ").length > 3 ? "..." : "")}
                     </h3>
-                    <p className="text-[#1B6392]  font-bold heading-font">
-                      {product.price}
-                    </p>
-                    <button className="mt-5 px-[4.9rem] py-[0.5rem] text-sm text-white font-bold bg-[#1B6392]">
+                    <div className="flex items-center gap-2">
+                      <p className="text-[#1B6392] font-bold heading-font">
+                        {product.price}
+                      </p>
+                      {product.discount && (
+                        <p className="text-gray-500 line-through text-sm">
+                          {product.discount}
+                        </p>
+                      )}
+                    </div>
+                    <button className="mt-4 w-full py-2 text-sm text-white font-bold bg-[#3b82f6] hover:bg-[#2563eb] transition-colors rounded">
                       Add to Cart
                     </button>
                   </div>
