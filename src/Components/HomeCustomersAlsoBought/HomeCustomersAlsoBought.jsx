@@ -176,7 +176,7 @@ export default function HomeCustomersAlsoBought() {
                   <button className="p-1.5 rounded-lg border border-gray-200 hover:bg-gray-50">
                     <Heart className="w-4 h-4 text-gray-600" />
                   </button>
-                  <button className="flex-1 bg-orange-500 text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs">
+                  <button className="flex-1 bg-[#3b82f6] text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs">
                     <ShoppingCart className="w-4 h-4" />
                     Add to Cart
                   </button>

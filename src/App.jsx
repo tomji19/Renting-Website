@@ -7,6 +7,7 @@ import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Shop from "./Pages/Shop/Shop";
 import Sitemap from "./Components/Sitemap/Sitemap";
 import ProductDetails from "./Components/ProductDetails/ProductDetails"; // Make sure this path matches your project structure
+import AuthComponent from "./Components/AuthComponent/AuthComponent";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -27,8 +28,17 @@ export default function App() {
           element: <Sitemap />,
         },
         {
-          path: "/product/:id", // Add the product detail route
+          path: "/product/:id",
           element: <ProductDetails />,
+        },
+        {
+          path: "/auth",
+          element: (
+            <div>
+              <h1>Auth Page Test</h1>
+              <AuthComponent />
+            </div>
+          ),
         },
         {
           path: "*",
