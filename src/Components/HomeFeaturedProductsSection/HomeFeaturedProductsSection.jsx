@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Heart, ShoppingCart, Eye } from "lucide-react";
 import tozo1 from "../../assets/tozo1.png";
+import airpod from "../../assets/airpod.png";
 import a21 from "../../assets/a21.png";
 import third from "../../assets/third.png";
 import fourth from "../../assets/fourth.png";
@@ -89,46 +90,47 @@ export default function HomeFeaturedProductsSection() {
     },
   ];
 
-  
   const handleProductClick = (product) => {
     navigate(`/product/${product.id}`, { state: { product } });
   };
 
   return (
     <section className="py-5 px-4 sm:px-8 lg:px-16">
-      <div className="min-h-screen">
+     <div className="min-h-screen">
         <div className="flex flex-col lg:flex-row lg:gap-7">
-          {/* Promotional Banner - Hidden on small/medium screens */}
+          {/* Updated Promotional Banner - Hidden on small/medium screens */}
           <div className="hidden lg:block lg:w-1/4">
-            <div className="bg-[#F3DE6D] rounded-lg h-full flex flex-col">
-              <div className="flex-1 p-5">
-                <h2 className="text-red-500 text-sm font-semibold mb-2 body-font">
-                  COMPUTER & ACCESSORIES
-                </h2>
-                <h1 className="text-3xl font-bold mb-2 heading-font">
-                  32% Discount
-                </h1>
-                <p className="mb-4 heading-font">
-                  For all electronics products
-                </p>
-                <div className="mb-4">
-                  <span className="text-sm heading-font">Offers ends in:</span>
-                  <span className="ml-1 bg-white px-1 py-1 text-sm rounded-sm heading-font">
-                    ENDS OF CHRISTMAS
-                  </span>
-                </div>
-                <div className="flex justify-center">
-                  <button className="bg-orange-500 text-white font-bold  px-6 py-2 rounded-sm hover:bg-orange-600 transition heading-font">
-                    SHOP NOW →
-                  </button>
-                </div>
-              </div>
-              <div className="mt-4">
+            <div className="h-full flex flex-col gap-10">
+              {/* Top Section - 60% height */}
+              <div className="h-[58%] p-6 flex flex-col items-center justify-center text-center bg-[#FFF8E7] rounded-lg">
                 <img
-                  src={promotion}
-                  className="w-full object-cover"
-                  alt="promotional image in the left banner"
+                  src={airpod}
+                  alt="Wireless Earbuds"
+                  className="w-72 h-72 object-contain mb-4"
                 />
+                <h2 className="text-3xl font-semibold heading-font mb-2">Xiaomi True Wireless Earbuds</h2>
+                <p className="text-gray-600 text-md mb-3">
+                  Escape the noise. It's time to hear the magic with Xiaomi Earbuds.
+                </p>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-md text-gray-600">Only for:</span>
+                  <span className="font-bold">2499 EGP</span>
+                </div>
+                <button className="w-full bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition-colors">
+                  SHOP NOW →
+                </button>
+              </div>
+              
+              {/* Bottom Section - 40% height */}
+              <div className="h-[38%] bg-[#1B2E3C] text-white p-6 flex flex-col items-center justify-center text-center rounded-lg">
+                <h3 className="text-sm font-semibold mb-2 bg-white bg-opacity-15 px-6 py-2">SUMMER SALES</h3>
+                <div className="text-3xl font-bold mb-2">37% DISCOUNT</div>
+                <p className="text-sm mb-4">
+                  only for <span className="text-blue-400">SmartPhone</span> product.
+                </p>
+                <button className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors">
+                  SHOP NOW →
+                </button>
               </div>
             </div>
           </div>
