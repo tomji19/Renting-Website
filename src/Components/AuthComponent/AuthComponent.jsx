@@ -107,13 +107,13 @@ const AuthComponent = () => {
                 setErrors({ email: 'Email already exists' });
                 return;
             }
-            
+
             const newUser = {
                 email: formData.email,
                 password: formData.password,
                 id: Date.now()
             };
-            
+
             users.push(newUser);
             localStorage.setItem('users', JSON.stringify(users));
             localStorage.setItem('currentUser', JSON.stringify(newUser));
