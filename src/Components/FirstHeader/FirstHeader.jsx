@@ -1,6 +1,9 @@
 import React from "react";
 import classes from "../FirstHeader/FirstHeader.module.css";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
+import { auth } from "../../firebase";
+import AuthComponent from "./../AuthComponent/AuthComponent";
 
 export default function FirstHeader() {
   return (
@@ -9,7 +12,9 @@ export default function FirstHeader() {
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
           {/* Logo Section */}
           <div className="w-full sm:w-1/3 flex items-center justify-center sm:justify-start lg:w-1/6">
-            <img src={logo} className="text-3xl text-start w-[16rem]"></img>
+            <Link to="/" className="text-3xl text-start w-[16rem]">
+              <img src={logo}></img>
+            </Link>
           </div>
 
           {/* Search Bar Section */}
@@ -39,7 +44,10 @@ export default function FirstHeader() {
 
           {/* Cart and Login Section */}
           <div className="w-full sm:w-auto flex items-center justify-center sm:justify-end gap-4 flex-shrink-0">
-            <div className="text-black flex items-start border-2 border-black rounded-md px-6 py-2 justify-start body-font hover:bg-[#f97316] hover:border-[#f97316] hover:text-white">
+            <Link
+              to="/cart"
+              className="text-black flex items-start border-2 border-black rounded-md px-6 py-2 justify-start body-font hover:bg-[#f97316] hover:border-[#f97316] hover:text-white"
+            >
               <svg
                 className="h-6 w-6 mr-2"
                 viewBox="0 0 24 24"
@@ -55,8 +63,11 @@ export default function FirstHeader() {
                 />
               </svg>
               Cart
-            </div>
-            <div className="text-black flex items-start border-2 border-black rounded-md px-6 py-2 justify-start body-font hover:bg-[#f97316] hover:border-[#f97316] hover:text-white">
+            </Link>
+            <Link
+              to="/auth"
+              className="text-black flex items-start border-2 border-black rounded-md px-6 py-2 justify-start body-font hover:bg-[#f97316] hover:border-[#f97316] hover:text-white"
+            >
               <svg
                 className="h-6 w-6 mr-2"
                 viewBox="0 0 24 24"
@@ -72,7 +83,7 @@ export default function FirstHeader() {
                 />
               </svg>
               Login
-            </div>
+            </Link>
           </div>
         </div>
       </header>
