@@ -34,12 +34,7 @@ export default function App() {
         },
         {
           path: "/auth",
-          element: (
-            <div>
-              <h1>Auth Page Test</h1>
-              <AuthComponent />
-            </div>
-          ),
+          element: <AuthComponent />,
         },
         {
           path: "/forgot-password",

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "../FirstHeader/FirstHeader.module.css";
 import logo from "../../assets/logo.png";
+import { Link, Navigate } from "react-router-dom";
+import AuthComponent from "../AuthComponent/AuthComponent";
 
 export default function FirstHeader() {
+  const [showAuth, setShowAuth] = useState(false);
+
   return (
     <>
       <header className="bg-white py-5 px-16">
@@ -56,7 +60,10 @@ export default function FirstHeader() {
               </svg>
               Cart
             </div>
-            <div className="text-black flex items-start border-2 border-black rounded-md px-6 py-2 justify-start body-font hover:bg-[#f97316] hover:border-[#f97316] hover:text-white">
+            <div 
+              className="text-black flex items-start border-2 border-black rounded-md px-6 py-2 justify-start body-font hover:bg-[#f97316] hover:border-[#f97316] hover:text-white"
+              onClick={() => setShowAuth(true)}
+            >
               <svg
                 className="h-6 w-6 mr-2"
                 viewBox="0 0 24 24"
@@ -71,11 +78,13 @@ export default function FirstHeader() {
                   strokeLinejoin="round"
                 />
               </svg>
-              Login
+              <h3>Login</h3>
             </div>
           </div>
         </div>
       </header>
+      
+      {showAuth && <AuthComponent onClose={() => setShowAuth(false)} />}
     </>
   );
 }
