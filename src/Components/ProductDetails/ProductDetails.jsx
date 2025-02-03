@@ -230,9 +230,11 @@ const ProductDetails = () => {
                 </div>
             </div>
 
-            <div >
+            <div>
                 <h2 className="text-2xl font-bold mb-8">Related Products</h2>
+                <div className="px-16">
                 <HomeGridProductsSection />
+                </div>
             </div>
             <div>
                 <AuthComponent />
