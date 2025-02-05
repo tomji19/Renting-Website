@@ -96,7 +96,7 @@ export default function HomeFeaturedProductsSection() {
 
   return (
     <section className="py-5 px-4 sm:px-8 lg:px-16">
-     <div className="min-h-screen">
+      <div className="min-h-screen">
         <div className="flex flex-col lg:flex-row lg:gap-7">
           {/* Updated Promotional Banner - Hidden on small/medium screens */}
           <div className="hidden lg:block lg:w-1/4">
@@ -108,9 +108,12 @@ export default function HomeFeaturedProductsSection() {
                   alt="Wireless Earbuds"
                   className="w-72 h-72 object-contain mb-4"
                 />
-                <h2 className="text-3xl font-semibold heading-font mb-2">Xiaomi True Wireless Earbuds</h2>
+                <h2 className="text-3xl font-semibold heading-font mb-2">
+                  Xiaomi True Wireless Earbuds
+                </h2>
                 <p className="text-gray-600 text-md mb-3">
-                  Escape the noise. It's time to hear the magic with Xiaomi Earbuds.
+                  Escape the noise. It's time to hear the magic with Xiaomi
+                  Earbuds.
                 </p>
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-md text-gray-600">Only for:</span>
@@ -120,13 +123,16 @@ export default function HomeFeaturedProductsSection() {
                   SHOP NOW →
                 </button>
               </div>
-              
+
               {/* Bottom Section - 40% height */}
               <div className="h-[38%] bg-[#1B2E3C] text-white p-6 flex flex-col items-center justify-center text-center rounded-lg">
-                <h3 className="text-sm font-semibold mb-2 bg-white bg-opacity-15 px-6 py-2">SUMMER SALES</h3>
+                <h3 className="text-sm font-semibold mb-2 bg-white bg-opacity-15 px-6 py-2">
+                  SUMMER SALES
+                </h3>
                 <div className="text-3xl font-bold mb-2">37% DISCOUNT</div>
                 <p className="text-sm mb-4">
-                  only for <span className="text-blue-400">SmartPhone</span> product.
+                  only for <span className="text-blue-400">SmartPhone</span>{" "}
+                  product.
                 </p>
                 <button className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors">
                   SHOP NOW →
@@ -136,7 +142,7 @@ export default function HomeFeaturedProductsSection() {
           </div>
 
           {/* Product Grid */}
-          <div className="w-full lg:w-3/4">
+          <div className="w-full">
             {/* Header with Title and Browse All Link */}
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-semibold heading-font">
@@ -146,7 +152,7 @@ export default function HomeFeaturedProductsSection() {
                 Browse All Product →
               </a>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-4">
               {products.map((product) => (
                 <div
                   key={product.id}
@@ -160,17 +166,6 @@ export default function HomeFeaturedProductsSection() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {/* Action Buttons */}
-                    <div className="absolute top-5 right-4 flex flex-col gap-2 transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
-                      <button className="bg-white p-2 rounded-full shadow-md hover:bg-orange-500 hover:text-white transition-colors">
-                        <Heart size={20} />
-                      </button>
-                      <button className="bg-white p-2 rounded-full shadow-md hover:bg-orange-500 hover:text-white transition-colors">
-                        <ShoppingCart size={20} />
-                      </button>
-                      <button className="bg-white p-2 rounded-full shadow-md hover:bg-orange-500 hover:text-white transition-colors">
-                        <Eye size={20} />
-                      </button>
-                    </div>
                     {product.discount && (
                       <span className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-sm text-sm">
                         Sale
@@ -182,8 +177,8 @@ export default function HomeFeaturedProductsSection() {
                     <div className="text-sm font-semibold text-gray-600 mb-1">
                       {product.category}
                     </div>
-                    <h3 className="font-bold h-[5rem] text-[0.9rem] text-gray-800 heading-font">
-                      {product.name.split(" ").slice(0, 10).join(" ") +
+                    <h3 className="h-[3rem] text-gray-800 text-sm font-semibold mb-1 body-font line-clamp-3">
+                      {product.name.split(" ").slice(0, 8).join(" ") +
                         (product.name.split(" ").length > 3 ? "..." : "")}
                     </h3>
                     <div className="flex items-center gap-2">
@@ -196,9 +191,15 @@ export default function HomeFeaturedProductsSection() {
                         </p>
                       )}
                     </div>
-                    <button className="mt-4 w-full py-2 text-sm text-white font-bold bg-[#3b82f6] hover:bg-[#2563eb] transition-colors rounded">
-                      Add to Cart
-                    </button>
+                    <div className="flex gap-1 mt-3">
+                      <button className="p-1.5 rounded-lg border border-gray-200 hover:bg-gray-50">
+                        <Heart className="w-4 h-4 text-gray-600" />
+                      </button>
+                      <button className="flex-1 bg-[#3b82f6] text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs">
+                        <ShoppingCart className="w-4 h-4" />
+                        Add to Cart
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}
