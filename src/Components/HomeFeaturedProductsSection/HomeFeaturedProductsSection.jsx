@@ -88,6 +88,32 @@ export default function HomeFeaturedProductsSection() {
       brand: "TOZO",
       availability: true,
     },
+    {
+      id: 7,
+      name: "Anker Soundcore H30i A3012H11 Bluetooth Headphone",
+      price: `67,000 EGP`,
+      image: third,
+      category: `Smartphones`,
+      discount: `24,000`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
+    },
+    {
+      id: 8,
+      name: "Anker Soundcore H30i A3012H11 Bluetooth Headphone",
+      price: `67,000 EGP`,
+      image: seventh,
+      category: `Smartphones`,
+      discount: `24,000`,
+      rating: 4.7,
+      reviews: 2500,
+      sku: "TZ001",
+      brand: "TOZO",
+      availability: true,
+    },
   ];
 
   const handleProductClick = (product) => {
