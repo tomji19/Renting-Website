@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function SecondHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,13 +8,14 @@ export default function SecondHeader() {
   // Add effect to handle screen resize
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) { // 1024px is the 'lg' breakpoint in Tailwind
+      if (window.innerWidth >= 1024) {
+        // 1024px is the 'lg' breakpoint in Tailwind
         setIsMenuOpen(false);
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const toggleMenu = () => {
@@ -22,7 +24,9 @@ export default function SecondHeader() {
 
   return (
     <header className="bg-[#3b82f6] py-5 px-4 md:px-16">
-      <div className="container mx-auto relative"> {/* Removed flex to fix centering */}
+      <div className="container mx-auto relative">
+        {" "}
+        {/* Removed flex to fix centering */}
         {/* Menu Button - Positioned absolutely */}
         <button
           className="text-white lg:hidden absolute left-[46%] top-1/2 -translate-y-1/2"
@@ -30,7 +34,6 @@ export default function SecondHeader() {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={30} />}
         </button>
-
         {/* Navigation Links */}
         <nav
           className={`${
@@ -54,42 +57,14 @@ export default function SecondHeader() {
             className={`${
               isMenuOpen
                 ? "flex flex-col space-y-4 mt-8"
-                : "lg:flex lg:justify-start lg:space-x-4"
+                : "lg:flex lg:justify-start lg:space-x-8"
             }`}
           >
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
-              Computers
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
+            <Link to="/shop" className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+              Shop
+            </Link>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
               Laptops
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
             </div>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
               Accessories
