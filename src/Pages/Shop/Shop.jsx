@@ -11,6 +11,7 @@ import fifth from "../../assets/fifth.png";
 import sixth from "../../assets/sixth.png";
 import seventh from "../../assets/seventh.png";
 import promotion from "../../assets/promotion.png";
+// import products from "../../data/products.json";
 
 export default function Shop() {
   const navigate = useNavigate();

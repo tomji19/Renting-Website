@@ -1,6 +1,7 @@
 import React from "react";
 import macBookImage from "/src/assets/Discount1.png";
 import classes from "../HomePromotionSection/HomePromotionSection.module.css";
+// import products from "../../data/products.json";
 
 export default function HomePromotionSection() {
   return (

@@ -3,6 +3,7 @@ import { useLocation, useParams } from "react-router-dom";
 import { Star, Heart, Share2, ChevronLeft, ChevronRight } from "lucide-react";
 import HomeGridProductsSection from "../HomeGridProductsSection/HomeGridProductsSection";
 import AuthComponent from "../AuthComponent/AuthComponent";
+// import products from "../../data/products.json";
 
 const ProductDetails = () => {
   const { id } = useParams();

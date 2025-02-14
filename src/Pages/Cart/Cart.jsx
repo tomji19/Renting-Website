@@ -2,6 +2,7 @@ import React from "react";
 import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../Components/CartContext/CartContext";
+// import products from "../../data/products.json";
 
 export default function Cart() {
   const navigate = useNavigate();

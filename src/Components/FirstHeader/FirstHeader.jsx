@@ -7,6 +7,8 @@ import AuthComponent from "./../AuthComponent/AuthComponent";
 import { useCart } from "../../Components/CartContext/CartContext";
 import { ShoppingCart, X, Plus, Minus } from "lucide-react";
 import SearchBar from "../SearchBar/SearchBar";
+// import products from "../../data/products.json";
+
 
 
 

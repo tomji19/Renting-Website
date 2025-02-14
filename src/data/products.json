@@ -1,0 +1,1143 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Apple MacBook Air M3",
+            "price": 1199,
+            "image1": "https://m.media-amazon.com/images/I/61lAGP5afpL._AC_SX679_.jpg",
+            "image2": "https://m.media-amazon.com/images/I/718LJ4XxkYL._AC_SX679_.jpg",
+            "image3": "https://m.media-amazon.com/images/I/71HSDFQr+qL._AC_SX679_.jpg",
+            "image4": "https://m.media-amazon.com/images/I/71vwCE+PEQL._AC_SX679_.jpg",
+            "image5": "https://m.media-amazon.com/images/I/61AJnT8HmdL._AC_SX679_.jpg",
+            "category": "laptops",
+            "brand": "Apple",
+            "description": "The latest MacBook Air featuring the M3 chip, offering a balance of performance, battery life, and design. Ideal for productivity, browsing, and light gaming.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 1500,
+                "source": "The Verge"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Acer Swift Go 14",
+            "price": 749,
+            "image": "acer-swift-go-14.jpg",
+            "image1": "https://m.media-amazon.com/images/I/61GfMDJhhhL._AC_SX679_.jpg",
+            "image2": "https://m.media-amazon.com/images/I/71kEyZrTihL._AC_SX679_.jpg",
+            "image3": "https://m.media-amazon.com/images/I/61RoiavsL5L._AC_SX679_.jpg",
+            "image4": "https://m.media-amazon.com/images/I/61uSO7rfGaL._AC_SX679_.jpg",
+            "image5": "https://m.media-amazon.com/images/I/51hwiEDXaAL._AC_SX679_.jpg",
+            "category": "laptops",
+            "brand": "Acer",
+            "description": "A budget-friendly laptop with a bright display, comfortable keyboard, and strong performance packaged in a sleek chassis.",
+            "rating": {
+                "score": 4.5,
+                "reviews": 1200,
+                "source": "Laptop Mag"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Asus Zenbook 14 OLED (Q425)",
+            "price": 999,
+            "image": "asus-zenbook-14-oled.jpg",
+            "image1": "https://m.media-amazon.com/images/I/51iwUKauJQL._AC_SX679_.jpg",
+            "image2": "https://m.media-amazon.com/images/I/31lE26xhOGL._AC_SX679_.jpg",
+            "image3": "https://m.media-amazon.com/images/I/51FZdTaq7ZL._AC_SX679_.jpg",
+            "image4": "https://m.media-amazon.com/images/I/51V5btVb++L._AC_SX679_.jpg",
+            "image5": "https://m.media-amazon.com/images/I/412SYatN2rL._AC_SX679_.jpg",
+            "category": "laptops",
+            "brand": "Asus",
+            "description": "Features a gorgeous OLED display, powerful Intel Core Ultra 7 processor, and almost 16 hours of battery life.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 1100,
+                "source": "Laptop Mag"
+            }
+        },
+        {
+            "id": 4,
+            "name": "HP OmniBook Ultra Flip 14 (2024)",
+            "price": 1350,
+            "image": "hp-omnibook-ultra-flip-14.jpg",
+            "image1": "https://m.media-amazon.com/images/I/81RXoQVaBlL._AC_SX679_.jpg",
+            "image2": "https://m.media-amazon.com/images/I/81n3k+O2OKL._AC_SX679_.jpg",
+            "image3": "https://m.media-amazon.com/images/I/81Va3LUGK-L._AC_SX679_.jpg",
+            "image4": "https://m.media-amazon.com/images/I/815wvxzN7QL._AC_SX679_.jpg",
+            "image5": "https://m.media-amazon.com/images/I/712-NgWrGmL._AC_SX679_.jpg",
+            "category": "laptops",
+            "brand": "HP",
+            "description": "A premium 2-in-1 convertible laptop with a compact design, long battery life, and Intel's Lunar Lake processors for productivity tasks.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 900,
+                "source": "RTINGS.com"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Lenovo ThinkPad T14s (Gen 6, Snapdragon)",
+            "price": 1299,
+            "image": "lenovo-thinkpad-t14s-gen6.jpg",
+            "image1": "https://m.media-amazon.com/images/I/51kEd2XVkDL._AC_SX679_.jpg",
+            "image2": "https://m.media-amazon.com/images/I/51udP+qffUL._AC_SX679_.jpg",
+            "image3": "https://m.media-amazon.com/images/I/51ompV01IZL._AC_SX679_.jpg",
+            "image4": "https://m.media-amazon.com/images/I/613ALU43vxL._AC_SX679_.jpg",
+            "image5": "https://m.media-amazon.com/images/I/419HNTdzJPL._AC_SX679_.jpg",
+            "category": "laptops",
+            "brand": "Lenovo",
+            "description": "Incredibly long battery life, bright screen, great keyboard, and solid performance with Qualcomm Snapdragon X Elite processor.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 1000,
+                "source": "Tom's Hardware"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Dell XPS 13 Plus",
+            "price": 1399,
+            "image": "dell-xps-13-plus.jpg",
+            "image1": "https://m.media-amazon.com/images/I/61DCfUlyEJS._AC_SX679_.jpg",
+            "image2": "https://m.media-amazon.com/images/I/61rFIdArXxS._AC_SX679_.jpg",
+            "image3": "https://m.media-amazon.com/images/I/61ZLrp7EpDS._AC_SX679_.jpg",
+            "image4": "https://m.media-amazon.com/images/I/61T5zARq8kS._AC_SX679_.jpg",
+            "image5": "https://m.media-amazon.com/images/I/615mVhcNe+S._AC_SX679_.jpg",
+            "category": "laptops",
+            "brand": "Dell",
+            "description": "A sleek and powerful ultrabook with a stunning 13.4-inch display, Intel Core i7 processor, and a comfortable keyboard.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 950,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Microsoft Surface Laptop 7th Edition",
+            "price": 999,
+            "image": "microsoft-surface-laptop-7th-edition.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "laptops",
+            "brand": "Microsoft",
+            "description": "Features the Snapdragon X Elite chip, offering a balance of performance and portability with a high-resolution touchscreen.",
+            "rating": {
+                "score": 4.5,
+                "reviews": 800,
+                "source": "The Verge"
+            }
+        },
+        {
+            "id": 8,
+            "name": "Asus ROG Strix Scar 17 X3D",
+            "price": 2499,
+            "image": "asus-rog-strix-scar-17-x3d.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "laptops",
+            "brand": "Asus",
+            "description": "A high-performance gaming laptop with advanced cooling, NVIDIA RTX graphics, and a 17.3-inch high-refresh-rate display.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 700,
+                "source": "The Verge"
+            }
+        },
+        {
+            "id": 9,
+            "name": "MacBook Pro 16 M3 Max",
+            "price": 3499,
+            "image": "macbook-pro-16-m3-max.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "laptops",
+            "brand": "Apple",
+            "description": "Designed for creative professionals, featuring the M3 Max chip, a 16-inch Retina display, and exceptional performance.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 600,
+                "source": "Laptop Mag"
+            }
+        },
+        {
+            "id": 10,
+            "name": "Lenovo Yoga Book 9i",
+            "price": 1999,
+            "image": "lenovo-yoga-book-9i.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "laptops",
+            "brand": "Lenovo",
+            "description": "A dual-screen laptop with a versatile design, Intel Core i7 processor, and a unique hinge mechanism for various modes.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 750,
+                "source": "The Verge"
+            }
+        },
+        {
+            "id": 11,
+            "name": "PlayStation 5",
+            "price": 499,
+            "image": "playstation-5.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Sony",
+            "description": "The PlayStation 5 offers a powerful gaming experience with its custom SSD, ray tracing capabilities, and a vast library of exclusive titles.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 5000,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 12,
+            "name": "Xbox Series X",
+            "price": 499,
+            "image": "xbox-series-x.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Microsoft",
+            "description": "The Xbox Series X is the most powerful and fastest gaming console available today, surpassing the PlayStation 5 in technical specifications. It boasts impressive graphics capabilities, native 4K resolution, and ultra-fast load times, along with extensive backward compatibility with games from previous generations.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4500,
+                "source": "Lifewire"
+            }
+        },
+        {
+            "id": 13,
+            "name": "Nintendo Switch OLED Model",
+            "price": 349,
+            "image": "nintendo-switch-oled.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Nintendo",
+            "description": "The Nintendo Switch OLED Model features a vibrant 7-inch OLED screen, enhanced audio, and a wide adjustable stand, providing an improved handheld gaming experience.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 4000,
+                "source": "Stuff"
+            }
+        },
+        {
+            "id": 14,
+            "name": "Xbox Series S",
+            "price": 299,
+            "image": "xbox-series-s.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Microsoft",
+            "description": "The Xbox Series S is a compact and affordable console that offers next-gen performance at a lower resolution, ideal for budget-conscious gamers.",
+            "rating": {
+                "score": 4.5,
+                "reviews": 3500,
+                "source": "Tom's Guide"
+            }
+        },
+        {
+            "id": 15,
+            "name": "PlayStation 4 Pro",
+            "price": 399,
+            "image": "playstation-4-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Sony",
+            "description": "The PlayStation 4 Pro enhances gaming with 4K resolution and improved performance, supporting a vast library of games.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 6000,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 16,
+            "name": "Nintendo Switch Lite",
+            "price": 199,
+            "image": "nintendo-switch-lite.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Nintendo",
+            "description": "The Nintendo Switch Lite is a handheld-only version of the Switch, offering a compact and lightweight design for gaming on the go.",
+            "rating": {
+                "score": 4.4,
+                "reviews": 3000,
+                "source": "Pocket Tactics"
+            }
+        },
+        {
+            "id": 17,
+            "name": "Steam Deck",
+            "price": 399,
+            "image": "steam-deck.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Valve",
+            "description": "The Steam Deck is a handheld gaming PC that allows you to play your Steam library on the go, featuring a 7-inch touchscreen and customizable controls.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 2500,
+                "source": "GamesRadar"
+            }
+        },
+        {
+            "id": 18,
+            "name": "PlayStation 5 Digital Edition",
+            "price": 399,
+            "image": "playstation-5-digital.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Sony",
+            "description": "The PlayStation 5 Digital Edition offers the same performance as the standard PS5 but without a disc drive, catering to gamers who prefer digital downloads.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4000,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 19,
+            "name": "Xbox One X",
+            "price": 499,
+            "image": "xbox-one-x.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Microsoft",
+            "description": "The Xbox One X, released in 2017, is an impressive upgrade from its predecessor, boasting notable enhancements such as 4K graphics, HDR support, and six teraflops of computing power.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 5000,
+                "source": "Lifewire"
+            }
+        },
+        {
+            "id": 20,
+            "name": "Nintendo Switch 2",
+            "price": 399,
+            "image": "nintendo-switch-2.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "gaming consoles",
+            "brand": "Nintendo",
+            "description": "The Nintendo Switch 2, announced in January 2025, features a similar hybrid design to its predecessor with detachable controllers and a TV dock, and is planned for release later in 2025.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 1000,
+                "source": "Polygon"
+            }
+        },
+        {
+            "id": 21,
+            "name": "Apple iPhone 16",
+            "price": 799,
+            "image": "iphone-16.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Apple",
+            "description": "The iPhone 16 offers a balance of performance and affordability, featuring the A18 chip, improved battery life, and new AI capabilities.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 3200,
+                "source": "The Guardian"
+            }
+        },
+        {
+            "id": 22,
+            "name": "Apple iPhone 16 Plus",
+            "price": 899,
+            "image": "iphone-16-plus.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Apple",
+            "description": "The iPhone 16 Plus provides a larger display and extended battery life, making it ideal for users seeking enhanced media consumption.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 2800,
+                "source": "The Guardian"
+            }
+        },
+        {
+            "id": 23,
+            "name": "Apple iPhone 16 Pro",
+            "price": 999,
+            "image": "iphone-16-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Apple",
+            "description": "The iPhone 16 Pro features a superior camera system with a 5x telephoto lens, catering to photography enthusiasts.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 3500,
+                "source": "The Guardian"
+            }
+        },
+        {
+            "id": 24,
+            "name": "Apple iPhone 16 Pro Max",
+            "price": 1199,
+            "image": "iphone-16-pro-max.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Apple",
+            "description": "The iPhone 16 Pro Max offers a massive 6.9-inch display and impressive battery life, ideal for users seeking a premium experience.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 4000,
+                "source": "The Guardian"
+            }
+        },
+        {
+            "id": 25,
+            "name": "Samsung Galaxy S25 Ultra",
+            "price": 1299,
+            "image": "galaxy-s25-ultra.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Samsung",
+            "description": "The Galaxy S25 Ultra boasts a 200MP main camera, Galaxy AI integration, and the Snapdragon 8 Elite chipset for top-tier performance.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4500,
+                "source": "New York Post"
+            }
+        },
+        {
+            "id": 26,
+            "name": "Google Pixel 9 Pro",
+            "price": 999,
+            "image": "pixel-9-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Google",
+            "description": "The Pixel 9 Pro offers advanced AI-based picture-enhancing capabilities, providing users with exceptional photography experiences.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 3000,
+                "source": "The Telegraph"
+            }
+        },
+        {
+            "id": 27,
+            "name": "OnePlus 13",
+            "price": 800,
+            "image": "oneplus-13.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "OnePlus",
+            "description": "The OnePlus 13 delivers killer specs at a surprisingly low price, reconnecting with its roots to offer exceptional value.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 2700,
+                "source": "WIRED"
+            }
+        },
+        {
+            "id": 28,
+            "name": "Xiaomi 14 Ultra",
+            "price": 999,
+            "image": "xiaomi-14-ultra.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Xiaomi",
+            "description": "The Xiaomi 14 Ultra features a sleek design, powerful performance, and an impressive camera system for photography enthusiasts.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 2500,
+                "source": "TechAdvisor"
+            }
+        },
+        {
+            "id": 29,
+            "name": "Oppo Find X8 Pro",
+            "price": 950,
+            "image": "oppo-find-x8-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Oppo",
+            "description": "The Oppo Find X8 Pro offers a stunning display, fast charging capabilities, and a versatile camera setup for creative users.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 2300,
+                "source": "TechAdvisor"
+            }
+        },
+        {
+            "id": 30,
+            "name": "Google Pixel 9 Pro XL",
+            "price": 1099,
+            "image": "pixel-9-pro-xl.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "smartphones",
+            "brand": "Google",
+            "description": "The Pixel 9 Pro XL provides a larger display and enhanced battery life, coupled with Google's advanced AI features.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 3200,
+                "source": "TechAdvisor"
+            }
+        },
+        {
+            "id": 31,
+            "name": "Apple Watch Series 10",
+            "price": 499,
+            "image": "apple-watch-series-10.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Apple",
+            "description": "The Apple Watch Series 10 features a sleek design, advanced health monitoring capabilities, and seamless integration with iOS devices.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 5000,
+                "source": "Consumer Reports"
+            }
+        },
+        {
+            "id": 32,
+            "name": "Samsung Galaxy Watch Ultra",
+            "price": 599,
+            "image": "samsung-galaxy-watch-ultra.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Samsung",
+            "description": "The Galaxy Watch Ultra offers a rugged design, long battery life, and comprehensive fitness tracking features.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 4500,
+                "source": "Consumer Reports"
+            }
+        },
+        {
+            "id": 33,
+            "name": "Google Pixel Watch 3",
+            "price": 399,
+            "image": "google-pixel-watch-3.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Google",
+            "description": "The Pixel Watch 3 combines elegant design with Google's Wear OS, providing a smooth user experience and extensive app support.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 4000,
+                "source": "Consumer Reports"
+            }
+        },
+        {
+            "id": 34,
+            "name": "Bose QuietComfort Ultra Earbuds",
+            "price": 249,
+            "image": "bose-quietcomfort-ultra-earbuds.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Bose",
+            "description": "The QuietComfort Ultra Earbuds offer immersive audio and high-quality noise cancellation, ideal for music enthusiasts.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 3000,
+                "source": "The Verge"
+            }
+        },
+        {
+            "id": 35,
+            "name": "Sony WH-1000XM5",
+            "price": 399,
+            "image": "sony-wh-1000xm5.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Sony",
+            "description": "The WH-1000XM5 is Sony’s flagship wireless noise-canceling headset, providing exceptional audio quality and long battery life.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 6000,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 36,
+            "name": "Apple AirPods Pro 2",
+            "price": 249,
+            "image": "airpods-pro-2.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Apple",
+            "description": "The AirPods Pro 2 feature improved noise cancellation, spatial audio, and a MagSafe charging case.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 5000,
+                "source": "MacRumors"
+            }
+        },
+        {
+            "id": 37,
+            "name": "Anker 733 Power Bank",
+            "price": 99,
+            "image": "anker-733-power-bank.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Anker",
+            "description": "The Anker 733 Power Bank is a versatile portable charger with a 10,000mAh capacity, capable of charging phones and small laptops.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4000,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 38,
+            "name": "Logitech MX Master 3S",
+            "price": 99,
+            "image": "logitech-mx-master-3s.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Logitech",
+            "description": "The MX Master 3S is a high-end wireless mouse with advanced customization options, perfect for professionals and gamers.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 8000,
+                "source": "PCMag"
+            }
+        },
+        {
+            "id": 39,
+            "name": "Keychron K8 Wireless Mechanical Keyboard",
+            "price": 89,
+            "image": "keychron-k8.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Keychron",
+            "description": "The Keychron K8 is a Bluetooth mechanical keyboard with hot-swappable switches, great for both gaming and productivity.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 3000,
+                "source": "PCMag"
+            }
+        },
+        {
+            "id": 40,
+            "name": "SteelSeries Apex Pro",
+            "price": 199,
+            "image": "steelseries-apex-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "SteelSeries",
+            "description": "The Apex Pro features adjustable mechanical switches, OLED display, and per-key RGB lighting, perfect for gamers.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 5000,
+                "source": "IGN"
+            }
+        },
+        {
+            "id": 41,
+            "name": "Corsair Virtuoso RGB Wireless XT",
+            "price": 269,
+            "image": "corsair-virtuoso-xt.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Corsair",
+            "description": "High-fidelity gaming headset with premium sound quality, wireless connectivity, and a durable aluminum build.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 4500,
+                "source": "Tom's Hardware"
+            }
+        },
+        {
+            "id": 42,
+            "name": "Razer DeathAdder V3 Pro",
+            "price": 149,
+            "image": "razer-deathadder-v3-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Razer",
+            "description": "A lightweight wireless gaming mouse with a 30K DPI sensor, great for fast-paced gaming.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 5500,
+                "source": "IGN"
+            }
+        },
+        {
+            "id": 43,
+            "name": "HyperX Cloud II Gaming Headset",
+            "price": 99,
+            "image": "hyperx-cloud-ii.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "HyperX",
+            "description": "A legendary wired gaming headset with a comfortable fit, 7.1 virtual surround sound, and durable design.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 7000,
+                "source": "Tom's Hardware"
+            }
+        },
+        {
+            "id": 44,
+            "name": "Asus ROG Strix Go 2.4",
+            "price": 179,
+            "image": "asus-rog-strix-go.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Asus",
+            "description": "A wireless gaming headset with low-latency 2.4GHz connectivity and AI noise cancellation.",
+            "rating": {
+                "score": 4.6,
+                "reviews": 3000,
+                "source": "PC Gamer"
+            }
+        },
+        {
+            "id": 45,
+            "name": "Logitech G Pro X Superlight",
+            "price": 149,
+            "image": "logitech-g-pro-x-superlight.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Logitech",
+            "description": "An ultra-lightweight wireless gaming mouse with a HERO 25K sensor, great for esports.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 8000,
+                "source": "PC Gamer"
+            }
+        },
+        {
+            "id": 46,
+            "name": "JBL Charge 5 Portable Speaker",
+            "price": 179,
+            "image": "jbl-charge-5.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "JBL",
+            "description": "The JBL Charge 5 delivers powerful audio with deep bass, 20-hour battery life, and an IP67 waterproof and dustproof design.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4500,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 47,
+            "name": "Samsung Galaxy Buds 2 Pro",
+            "price": 229,
+            "image": "galaxy-buds-2-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Samsung",
+            "description": "Samsung's premium earbuds with Hi-Fi 24-bit audio, ANC (Active Noise Cancellation), and seamless connectivity with Galaxy devices.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 5000,
+                "source": "CNET"
+            }
+        },
+        {
+            "id": 48,
+            "name": "Razer BlackShark V2 Pro",
+            "price": 199,
+            "image": "razer-blackshark-v2-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Razer",
+            "description": "A wireless esports gaming headset featuring THX Spatial Audio, ultra-soft memory foam ear cushions, and 70-hour battery life.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 6000,
+                "source": "IGN"
+            }
+        },
+        {
+            "id": 49,
+            "name": "Anker 737 Power Bank (PowerCore 24K)",
+            "price": 149,
+            "image": "anker-737-power-bank.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Anker",
+            "description": "A high-capacity 24,000mAh power bank with 140W fast charging, capable of charging laptops, tablets, and smartphones multiple times.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 4000,
+                "source": "Tom’s Guide"
+            }
+        },
+        {
+            "id": 50,
+            "name": "Elgato Stream Deck MK.2",
+            "price": 149,
+            "image": "elgato-stream-deck-mk2.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "Wearables & Accessories",
+            "brand": "Elgato",
+            "description": "A customizable 15-key controller designed for streamers and content creators, allowing instant access to shortcuts, commands, and apps.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 3500,
+                "source": "PCMag"
+            }
+        },
+        {
+            "id": 51,
+            "name": "NVIDIA GeForce RTX 4090",
+            "price": 1599,
+            "image": "rtx-4090.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "NVIDIA",
+            "description": "NVIDIA's most powerful gaming GPU with 24GB GDDR6X memory, DLSS 3, and ray tracing capabilities.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 8500,
+                "source": "TechRadar"
+            }
+        },
+        {
+            "id": 52,
+            "name": "AMD Ryzen 9 7950X",
+            "price": 699,
+            "image": "ryzen-9-7950x.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "AMD",
+            "description": "A 16-core, 32-thread processor with a max boost clock of 5.7GHz, built on the Zen 4 architecture.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 7300,
+                "source": "Tom's Hardware"
+            }
+        },
+        {
+            "id": 53,
+            "name": "Intel Core i9-14900K",
+            "price": 649,
+            "image": "intel-i9-14900k.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "Intel",
+            "description": "A high-performance CPU with 24 cores, 32 threads, and a turbo frequency of 6.0GHz, ideal for gaming and productivity.",
+            "rating": {
+                "score": 4.7,
+                "reviews": 6200,
+                "source": "PCMag"
+            }
+        },
+        {
+            "id": 54,
+            "name": "ASUS ROG STRIX Z790-E Gaming Motherboard",
+            "price": 399,
+            "image": "asus-rog-z790.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "ASUS",
+            "description": "A premium motherboard with PCIe 5.0, DDR5 support, Wi-Fi 6E, and robust VRM cooling for overclocking.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4100,
+                "source": "CNET"
+            }
+        },
+        {
+            "id": 55,
+            "name": "Corsair Vengeance RGB 32GB (2x16GB) DDR5-6000",
+            "price": 179,
+            "image": "corsair-vengeance-rgb.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "Corsair",
+            "description": "High-performance DDR5 memory with dynamic RGB lighting and tight timings for gaming and content creation.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 5700,
+                "source": "TechSpot"
+            }
+        },
+        {
+            "id": 56,
+            "name": "Samsung 990 PRO 2TB NVMe SSD",
+            "price": 229,
+            "image": "samsung-990-pro.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "Samsung",
+            "description": "A blazing-fast PCIe 4.0 SSD with read speeds up to 7,450 MB/s, ideal for gaming and professional workloads.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 6800,
+                "source": "AnandTech"
+            }
+        },
+        {
+            "id": 57,
+            "name": "EVGA SuperNOVA 1000W Platinum Power Supply",
+            "price": 249,
+            "image": "evga-1000w.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "EVGA",
+            "description": "A fully modular 80+ Platinum PSU with silent operation and reliable power delivery for high-end builds.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 4900,
+                "source": "PCWorld"
+            }
+        },
+        {
+            "id": 58,
+            "name": "Noctua NH-D15 Chromax.Black CPU Cooler",
+            "price": 109,
+            "image": "noctua-nh-d15.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "Noctua",
+            "description": "A premium dual-tower air cooler with ultra-quiet operation and exceptional thermal performance.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 7200,
+                "source": "Gamers Nexus"
+            }
+        },
+        {
+            "id": 59,
+            "name": "NZXT Kraken Z73 RGB 360mm AIO Liquid Cooler",
+            "price": 259,
+            "image": "nzxt-kraken-z73.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "NZXT",
+            "description": "An advanced AIO cooler with a customizable LCD screen, three 120mm RGB fans, and excellent cooling performance.",
+            "rating": {
+                "score": 4.8,
+                "reviews": 5600,
+                "source": "Digital Trends"
+            }
+        },
+        {
+            "id": 60,
+            "name": "Lian Li PC-O11 Dynamic EVO Case",
+            "price": 149,
+            "image": "lian-li-o11.jpg",
+            "image1": "",
+            "image2": "",
+            "image3": "",
+            "image4": "",
+            "image5": "",
+            "category": "PC Components",
+            "brand": "Lian Li",
+            "description": "A premium mid-tower case with tempered glass, spacious interior for high-end builds, and excellent airflow.",
+            "rating": {
+                "score": 4.9,
+                "reviews": 6300,
+                "source": "Linus Tech Tips"
+            }
+        }
+    ]
+}

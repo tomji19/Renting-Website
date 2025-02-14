@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Search } from "lucide-react";
 import { products } from "../HomeFeaturedProductsSection/HomeFeaturedProductsSection";
 import { useNavigate } from "react-router-dom";
+// import products from "../../data/products.json";
 
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState("");

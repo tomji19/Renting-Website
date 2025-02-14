@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+// import products from "../../data/products.json";
 
 export default function SecondHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

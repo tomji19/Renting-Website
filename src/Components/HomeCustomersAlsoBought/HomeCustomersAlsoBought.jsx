@@ -8,6 +8,7 @@ import third from "../../assets/third.png";
 import fourth from "../../assets/fourth.png";
 import fifth from "../../assets/fifth.png";
 import sixth from "../../assets/sixth.png";
+// import products from "../../data/products.json";
 
 export default function HomeCustomersAlsoBought() {
   const navigate = useNavigate();

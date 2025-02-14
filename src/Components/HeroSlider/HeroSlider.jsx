@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
+// import products from "../../data/products.json";
 
 const XboxSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);

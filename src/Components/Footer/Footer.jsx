@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "../Footer/Footer.module.css";
 import logowhite from "../../assets/logowhite.png";
+// import products from "../data/products.json";
 
 export default function Footer() {
   return (

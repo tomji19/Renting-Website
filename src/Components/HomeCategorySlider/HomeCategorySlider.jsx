@@ -7,6 +7,7 @@ import card3 from "../../assets/console1.png";
 import card4 from "../../assets/smartphone.png";
 import card5 from "../../assets/laptop.png";
 import card6 from "../../assets/case.png";
+// import products from "../../data/products.json";
 
 export default function HomeCategorySlider() {
   const [currentIndex, setCurrentIndex] = useState(0);

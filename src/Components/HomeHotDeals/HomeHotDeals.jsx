@@ -2,6 +2,7 @@ import React from "react";
 import classes from "../HomeHotDeals/HomeHotDeals.module.css";
 import deal1 from "../../assets/hotdeal1.png";
 import deal2 from "../../assets/hotdeal2.png";
+// import products from "../../data/products.json";
 
 export default function HomeHotDeals() {
   return (
