@@ -1,137 +1,154 @@
 import React from "react";
-import classes from "../Cart/Cart.module.css";
 import { X } from "lucide-react";
-import seventh from "../../assets/seventh.png";
-import sixth from "../../assets/sixth.png";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../Components/CartContext/CartContext";
 
 export default function Cart() {
-  const cartItems = [
-    {
-      id: 1,
-      name: "Sample Product",
-      price: 99.99,
-      quantity: 1,
-      color: "Black",
-      size: "M",
-      image: seventh,
-    },
-    {
-      id: 2,
-      name: "Another Item",
-      price: 149.99,
-      quantity: 2,
-      color: "Blue",
-      size: "L",
-      image: sixth,
-    },
-  ];
-
   const navigate = useNavigate();
+  const { cartItems, removeFromCart, updateQuantity, setIsCartOpen } =
+    useCart();
 
-  const subtotal = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
+  // Calculate order summary
+  const subtotal = cartItems.reduce((sum, item) => {
+    // Convert price string to number by removing 'EGP' and ',' then parsing
+    const price = parseFloat(item.price.replace(/,/g, "").replace(" EGP", ""));
+    return sum + price * item.quantity;
+  }, 0);
+
   const shipping = 35.0;
-  const tax = subtotal * 0.08;
+  const tax = subtotal * 0.14; // Egypt's VAT rate
   const total = subtotal + shipping + tax;
 
-  return (
-    <>
-      <section className="py-5 px-16">
-        <div className="">
-          <div className="bg-[#1B6392] h-80 flex items-center justify-center">
-            <h3 className="text-7xl font-bold text-white">Cart</h3>
-          </div>
+  // Handle quantity change
+  const handleQuantityChange = (itemId, newQuantity) => {
+    if (newQuantity >= 1) {
+      updateQuantity(itemId, newQuantity);
+    }
+  };
 
-          <div className="max-w-7xl py-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-              <div className="lg:col-span-8 space-y-6">
-                {cartItems.length === 0 ? (
-                  <p>Your cart is empty.</p>
-                ) : (
-                  cartItems.map((item) => (
-                    <div
-                      key={item.id}
-                      className="border p-4 bg-white shadow-sm"
-                    >
-                      <div className="flex gap-4">
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          className="w-40 h-40 object-cover"
-                        />
-                        <div className="flex-grow">
-                          <div className="flex justify-between">
-                            <div>
-                              <h3 className="text-2xl">{item.name}</h3>
-                              <p className="text-md text-gray-600">
-                                {item.color} {item.size && `/ ${item.size}`}
-                              </p>
-                              <p className="mt-1 text-lg">
-                                ${item.price.toFixed(2)}
-                              </p>
-                            </div>
-                            <button className="text-gray-400 hover:text-gray-600">
-                              <X size={20} />
-                            </button>
+  // Handle checkout
+  const handleCheckout = () => {
+    setIsCartOpen(false); // Close the mini cart
+    navigate("/checkout");
+  };
+
+  return (
+    <section className="py-5 px-16">
+      <div>
+        <div className="bg-[#1B6392] h-80 flex items-center justify-center">
+          <h3 className="text-7xl font-bold text-white">Cart</h3>
+        </div>
+
+        <div className="max-w-7xl mx-auto py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="lg:col-span-8 space-y-6">
+              {cartItems.length === 0 ? (
+                <div className="text-center py-8">
+                  <p className="text-xl text-gray-600">Your cart is empty.</p>
+                  <button
+                    onClick={() => navigate("/shop")}
+                    className="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded"
+                  >
+                    Continue Shopping
+                  </button>
+                </div>
+              ) : (
+                cartItems.map((item) => (
+                  <div
+                    key={item.id}
+                    className="border p-4 bg-white shadow-sm rounded-lg"
+                  >
+                    <div className="flex gap-4">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-40 h-40 object-cover rounded-md"
+                      />
+                      <div className="flex-grow">
+                        <div className="flex justify-between">
+                          <div>
+                            <h3 className="text-xl font-medium">{item.name}</h3>
+                            <p className="text-lg font-semibold text-[#1B6392] mt-2">
+                              {item.price}
+                            </p>
                           </div>
-                          <div className="mt-4">
-                            <select
-                              value={item.quantity}
-                              className="border p-1 text-sm"
-                            >
-                              {[1, 2, 3, 4, 5].map((num) => (
-                                <option key={num} value={num}>
-                                  {num}
-                                </option>
-                              ))}
-                            </select>
-                          </div>
+                          <button
+                            onClick={() => removeFromCart(item.id)}
+                            className="text-gray-400 hover:text-red-500 transition-colors"
+                          >
+                            <X size={20} />
+                          </button>
+                        </div>
+                        <div className="mt-4 flex items-center gap-4">
+                          <label className="text-gray-600">Quantity:</label>
+                          <select
+                            value={item.quantity}
+                            onChange={(e) =>
+                              handleQuantityChange(
+                                item.id,
+                                parseInt(e.target.value)
+                              )
+                            }
+                            className="border rounded-md p-1 text-sm"
+                          >
+                            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                              <option key={num} value={num}>
+                                {num}
+                              </option>
+                            ))}
+                          </select>
                         </div>
                       </div>
                     </div>
-                  ))
-                )}
-              </div>
-
-              <div className="lg:col-span-4">
-                <div className="border bg-white shadow-sm p-6">
-                  <h2 className="text-2xl font-semibold mb-4">Order summary</h2>
-                  <div className="space-y-4">
-                    <div className="flex justify-between">
-                      <span>Subtotal</span>
-                      <span>${subtotal.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Shipping estimate</span>
-                      <span>${shipping.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Tax estimate</span>
-                      <span>${tax.toFixed(2)}</span>
-                    </div>
-                    <div className="border-t pt-4">
-                      <div className="flex justify-between font-semibold">
-                        <span className="mb-3 text-xl">Order total</span>
-                        <span>${total.toFixed(2)}</span>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => navigate("/checkout")}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4"
-                    >
-                      Checkout
-                    </button>
                   </div>
+                ))
+              )}
+            </div>
+
+            <div className="lg:col-span-4">
+              <div className="border bg-white shadow-sm p-6 rounded-lg sticky top-4">
+                <h2 className="text-2xl font-semibold mb-6">Order Summary</h2>
+                <div className="space-y-4">
+                  <div className="flex justify-between text-gray-600">
+                    <span>Subtotal</span>
+                    <span>{subtotal.toLocaleString()} EGP</span>
+                  </div>
+                  <div className="flex justify-between text-gray-600">
+                    <span>Shipping estimate</span>
+                    <span>{shipping.toLocaleString()} EGP</span>
+                  </div>
+                  <div className="flex justify-between text-gray-600">
+                    <span>Tax estimate (14%)</span>
+                    <span>{tax.toLocaleString()} EGP</span>
+                  </div>
+                  <div className="border-t pt-4 mt-4">
+                    <div className="flex justify-between font-semibold">
+                      <span className="text-xl">Order total</span>
+                      <span className="text-[#1B6392]">
+                        {total.toLocaleString()} EGP
+                      </span>
+                    </div>
+                  </div>
+                  {cartItems.length > 0 && (
+                    <button
+                      onClick={handleCheckout}
+                      className="w-full bg-[#f97316] hover:bg-[#ea580c] text-white py-3 px-4 rounded-md mt-6 font-medium transition-colors"
+                    >
+                      Proceed to Checkout
+                    </button>
+                  )}
+                  <button
+                    onClick={() => navigate("/shop")}
+                    className="w-full border border-gray-300 hover:bg-gray-50 text-gray-700 py-3 px-4 rounded-md mt-2 font-medium transition-colors"
+                  >
+                    Continue Shopping
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

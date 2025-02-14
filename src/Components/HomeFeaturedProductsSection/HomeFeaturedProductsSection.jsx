@@ -1,18 +1,28 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Heart, ShoppingCart, Eye } from "lucide-react";
+import { Heart, ShoppingCart } from "lucide-react";
+import { useCart } from "../../Components/CartContext/CartContext";
 import tozo1 from "../../assets/tozo1.png";
 import airpod from "../../assets/airpod.png";
-import a21 from "../../assets/a21.png";
 import third from "../../assets/third.png";
 import fourth from "../../assets/fourth.png";
 import fifth from "../../assets/fifth.png";
 import sixth from "../../assets/sixth.png";
 import seventh from "../../assets/seventh.png";
-import promotion from "../../assets/promotion.png";
 
 export default function HomeFeaturedProductsSection() {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
+
+  const handleProductClick = (product) => {
+    navigate(`/product/${product.id}`, { state: { product } });
+  };
+
+  const handleAddToCart = (e, product) => {
+    e.stopPropagation(); // Prevent card click event from firing
+    addToCart(product);
+  };
+
   const products = [
     {
       id: 1,
@@ -90,11 +100,10 @@ export default function HomeFeaturedProductsSection() {
     },
     {
       id: 7,
-      name: "Anker Soundcore H30i A3012H11 Bluetooth Headphone",
-      price: `67,000 EGP`,
-      image: third,
-      category: `Smartphones`,
-      discount: `24,000`,
+      name: "TOZO T6 True Wireless Earbuds",
+      price: `25,000 EGP`,
+      image: tozo1,
+      category: `Headphones`,
       rating: 4.7,
       reviews: 2500,
       sku: "TZ001",
@@ -103,11 +112,10 @@ export default function HomeFeaturedProductsSection() {
     },
     {
       id: 8,
-      name: "Anker Soundcore H30i A3012H11 Bluetooth Headphone",
-      price: `67,000 EGP`,
+      name: "Oppo A3 Dual SIM (256GB / 8GB Ram / 6.67 Inch / 4G LTE) - Starry Purple",
+      price: `23,000 EGP`,
       image: seventh,
-      category: `Smartphones`,
-      discount: `24,000`,
+      category: `TV's`,
       rating: 4.7,
       reviews: 2500,
       sku: "TZ001",
@@ -116,18 +124,14 @@ export default function HomeFeaturedProductsSection() {
     },
   ];
 
-  const handleProductClick = (product) => {
-    navigate(`/product/${product.id}`, { state: { product } });
-  };
-
   return (
     <section className="py-5 px-4 sm:px-8 lg:px-16">
       <div className="min-h-screen">
         <div className="flex flex-col lg:flex-row lg:gap-7">
-          {/* Updated Promotional Banner - Hidden on small/medium screens */}
+          {/* Promotional Banner */}
           <div className="hidden lg:block lg:w-1/4">
             <div className="h-full flex flex-col gap-10">
-              {/* Top Section - 60% height */}
+              {/* Top Section */}
               <div className="h-[58%] p-6 flex flex-col items-center justify-center text-center bg-[#FFF8E7] rounded-lg">
                 <img
                   src={airpod}
@@ -150,7 +154,7 @@ export default function HomeFeaturedProductsSection() {
                 </button>
               </div>
 
-              {/* Bottom Section - 40% height */}
+              {/* Bottom Section */}
               <div className="h-[38%] bg-[#1B2E3C] text-white p-6 flex flex-col items-center justify-center text-center rounded-lg">
                 <h3 className="text-sm font-semibold mb-2 bg-white bg-opacity-15 px-6 py-2">
                   SUMMER SALES
@@ -169,7 +173,6 @@ export default function HomeFeaturedProductsSection() {
 
           {/* Product Grid */}
           <div className="w-full">
-            {/* Header with Title and Browse All Link */}
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-semibold heading-font">
                 Featured Products
@@ -191,14 +194,12 @@ export default function HomeFeaturedProductsSection() {
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    {/* Action Buttons */}
                     {product.discount && (
                       <span className="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-sm text-sm">
                         Sale
                       </span>
                     )}
                   </div>
-                  {/* Product Info */}
                   <div className="p-4">
                     <div className="text-sm font-semibold text-gray-600 mb-1">
                       {product.category}
@@ -218,10 +219,18 @@ export default function HomeFeaturedProductsSection() {
                       )}
                     </div>
                     <div className="flex gap-1 mt-3">
-                      <button className="p-1.5 rounded-lg border border-gray-200 hover:bg-gray-50">
+                      <button
+                        className="p-1.5 rounded-lg border border-gray-200 hover:bg-gray-50"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                        }}
+                      >
                         <Heart className="w-4 h-4 text-gray-600" />
                       </button>
-                      <button className="flex-1 bg-[#3b82f6] text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs">
+                      <button
+                        onClick={(e) => handleAddToCart(e, product)}
+                        className="flex-1 bg-[#3b82f6] text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs"
+                      >
                         <ShoppingCart className="w-4 h-4" />
                         Add to Cart
                       </button>

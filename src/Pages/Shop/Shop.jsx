@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ShoppingCart, Heart, Filter, Star, ChevronDown } from "lucide-react";
-import classes from "../Shop/Shop.module.css";
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../Components/CartContext/CartContext";
 import tozo1 from "../../assets/tozo1.png";
 import airpod from "../../assets/airpod.png";
 import a21 from "../../assets/a21.png";
@@ -12,7 +12,9 @@ import sixth from "../../assets/sixth.png";
 import seventh from "../../assets/seventh.png";
 import promotion from "../../assets/promotion.png";
 
-export default function shop() {
+export default function Shop() {
+  const navigate = useNavigate();
+  const { addToCart } = useCart();
   const [priceRange, setPriceRange] = useState([0, 100000]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
@@ -136,6 +138,11 @@ export default function shop() {
     navigate(`/product/${product.id}`, { state: { product } });
   };
 
+  const handleAddToCart = (e, product) => {
+    e.stopPropagation(); // Prevent card click event from firing
+    addToCart(product);
+  };
+
   return (
     <>
       <section>
@@ -256,7 +263,8 @@ export default function shop() {
                 {products.map((product) => (
                   <div
                     key={product.id}
-                    className="bg-white rounded-lg shadow-sm group"
+                    onClick={() => handleProductClick(product)}
+                    className="bg-white rounded-lg shadow-sm group cursor-pointer"
                   >
                     <div className="relative h-64">
                       <img
@@ -288,13 +296,19 @@ export default function shop() {
                       </div>
                       <div className="flex items-center justify-between">
                         <span className="text-lg font-bold text-blue-600">
-                          {product.price} EGP
+                          {product.price}
                         </span>
                         <div className="flex gap-2">
-                          <button className="p-2 rounded-lg border hover:bg-gray-50">
+                          <button
+                            className="p-2 rounded-lg border hover:bg-gray-50"
+                            onClick={(e) => e.stopPropagation()}
+                          >
                             <Heart className="w-4 h-4" />
                           </button>
-                          <button className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">
+                          <button
+                            className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700"
+                            onClick={(e) => handleAddToCart(e, product)}
+                          >
                             <ShoppingCart className="w-4 h-4" />
                           </button>
                         </div>

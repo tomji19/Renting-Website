@@ -13,6 +13,7 @@ import Cart from "./Pages/Cart/Cart";
 import Checkout from "./Pages/Checkout/Checkout";
 import ThankYou from "./Pages/ThankYou/ThankYou";
 import Login from './Pages/Login/Login';
+import { CartProvider } from "./Components/CartContext/CartContext";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -72,5 +73,9 @@ export default function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
+  );
 }
