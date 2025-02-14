@@ -8,7 +8,12 @@ import Shop from "./Pages/Shop/Shop";
 import Sitemap from "./Components/Sitemap/Sitemap";
 import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import AuthComponent from "./Components/AuthComponent/AuthComponent";
-import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
+import Cart from "./Pages/Cart/Cart";
+import Checkout from "./Pages/Checkout/Checkout";
+import ThankYou from "./Pages/ThankYou/ThankYou";
+import Login from './Pages/Login/Login';
+import { CartProvider } from "./Components/CartContext/CartContext";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -23,6 +28,26 @@ export default function App() {
         {
           path: "/shop",
           element: <Shop />,
+        },
+        {
+          path: "/cart",
+          element: <Cart />,
+        },
+        {
+          path: "/checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "/checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "/thankyou",
+          element: <ThankYou />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
         {
           path: "/sitemap",
@@ -48,5 +73,9 @@ export default function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
+  );
 }

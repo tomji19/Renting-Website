@@ -97,8 +97,8 @@ export default function HomeGridProductsSection() {
   };
 
   return (
-    <section className="w-full">
-      <div className="mx-auto px-4 md:px-6 lg:px-16">
+    <section className="mb-8 px-4 md:px-6 lg:px-16">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {Object.entries(gridData).map(([key, { title, products }]) => (
             <section
