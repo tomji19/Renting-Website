@@ -10,6 +10,110 @@ import fifth from "../../assets/fifth.png";
 import sixth from "../../assets/sixth.png";
 import seventh from "../../assets/seventh.png";
 
+
+
+
+export const products = [
+  {
+    id: 1,
+    name: "TOZO T6 True Wireless Earbuds",
+    price: `25,000 EGP`,
+    image: tozo1,
+    category: `Headphones`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 2,
+    name: "Oppo A3 Dual SIM (256GB / 8GB Ram / 6.67 Inch / 4G LTE) - Starry Purple",
+    price: `23,000 EGP`,
+    image: seventh,
+    category: `TV's`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 3,
+    name: "MSI Sword 17 HX B14VGKG-236EG Laptop (Intel i7-14650HX - 16GB Ram - M.2 NVMe 1TB - Nvidia RTX 4070 8GB - 17 Inch QHD+ IPS 240Hz - Win11) - Cosmos Gray",
+    price: `19,000 EGP`,
+    image: third,
+    category: `Laptops`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 4,
+    name: "Samsung UA40T5300AUXEG 40 Inch FHD Smart TV With Built-In Receiver",
+    price: `43,000 EGP`,
+    image: fourth,
+    category: `Cases`,
+    discount: `39,000`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 5,
+    name: "Anker Soundcore P30i A3959Z21 ANC Earbuds",
+    price: `18,000 EGP`,
+    image: fifth,
+    category: `Consoles`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 6,
+    name: "Anker Soundcore H30i A3012H11 Bluetooth Headphone",
+    price: `37,000 EGP`,
+    image: sixth,
+    category: `Smartphones`,
+    discount: `24,000`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 7,
+    name: "TOZO T6 True Wireless Earbuds",
+    price: `25,000 EGP`,
+    image: tozo1,
+    category: `Headphones`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+  {
+    id: 8,
+    name: "Oppo A3 Dual SIM (256GB / 8GB Ram / 6.67 Inch / 4G LTE) - Starry Purple",
+    price: `23,000 EGP`,
+    image: seventh,
+    category: `TV's`,
+    rating: 4.7,
+    reviews: 2500,
+    sku: "TZ001",
+    brand: "TOZO",
+    availability: true,
+  },
+];
+
 export default function HomeFeaturedProductsSection() {
   const navigate = useNavigate();
   const { addToCart } = useCart();
@@ -23,106 +127,7 @@ export default function HomeFeaturedProductsSection() {
     addToCart(product);
   };
 
-  const products = [
-    {
-      id: 1,
-      name: "TOZO T6 True Wireless Earbuds",
-      price: `25,000 EGP`,
-      image: tozo1,
-      category: `Headphones`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 2,
-      name: "Oppo A3 Dual SIM (256GB / 8GB Ram / 6.67 Inch / 4G LTE) - Starry Purple",
-      price: `23,000 EGP`,
-      image: seventh,
-      category: `TV's`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 3,
-      name: "MSI Sword 17 HX B14VGKG-236EG Laptop (Intel i7-14650HX - 16GB Ram - M.2 NVMe 1TB - Nvidia RTX 4070 8GB - 17 Inch QHD+ IPS 240Hz - Win11) - Cosmos Gray",
-      price: `19,000 EGP`,
-      image: third,
-      category: `Laptops`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 4,
-      name: "Samsung UA40T5300AUXEG 40 Inch FHD Smart TV With Built-In Receiver",
-      price: `43,000 EGP`,
-      image: fourth,
-      category: `Cases`,
-      discount: `39,000`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 5,
-      name: "Anker Soundcore P30i A3959Z21 ANC Earbuds",
-      price: `18,000 EGP`,
-      image: fifth,
-      category: `Consoles`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 6,
-      name: "Anker Soundcore H30i A3012H11 Bluetooth Headphone",
-      price: `37,000 EGP`,
-      image: sixth,
-      category: `Smartphones`,
-      discount: `24,000`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 7,
-      name: "TOZO T6 True Wireless Earbuds",
-      price: `25,000 EGP`,
-      image: tozo1,
-      category: `Headphones`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-    {
-      id: 8,
-      name: "Oppo A3 Dual SIM (256GB / 8GB Ram / 6.67 Inch / 4G LTE) - Starry Purple",
-      price: `23,000 EGP`,
-      image: seventh,
-      category: `TV's`,
-      rating: 4.7,
-      reviews: 2500,
-      sku: "TZ001",
-      brand: "TOZO",
-      availability: true,
-    },
-  ];
+  
 
   return (
     <section className="py-5 px-4 sm:px-8 lg:px-16">
@@ -245,3 +250,5 @@ export default function HomeFeaturedProductsSection() {
     </section>
   );
 }
+
+

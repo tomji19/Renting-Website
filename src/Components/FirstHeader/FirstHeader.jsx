@@ -6,6 +6,9 @@ import { auth } from "../../firebase";
 import AuthComponent from "./../AuthComponent/AuthComponent";
 import { useCart } from "../../Components/CartContext/CartContext";
 import { ShoppingCart, X, Plus, Minus } from "lucide-react";
+import SearchBar from "../SearchBar/SearchBar";
+
+
 
 export default function FirstHeader() {
   const {
@@ -20,41 +23,21 @@ export default function FirstHeader() {
 
   return (
     <header className="bg-white py-5 px-16 relative">
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-8">
         {/* Logo Section */}
-        <div className="w-full sm:w-1/3 flex items-center justify-center sm:justify-start lg:w-1/6">
+        <div className="w-4/5 sm:w-4/5 lg:w-1/6 flex items-center justify-center sm:justify-start">
           <Link to="/" className="text-3xl text-start w-[16rem]">
             <img src={logo} alt="Logo" />
           </Link>
         </div>
 
         {/* Search Bar Section */}
-        <div className="flex-grow relative flex-shrink mx-5">
-          <input
-            type="text"
-            className="bg-white rounded-md py-2 px-4 w-full focus:outline-none border-2 border-black"
-            placeholder="Search..."
-          />
-          <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700">
-            <svg
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
+        <div className="w-4/5 lg:flex-1 lg:w-auto order-2 lg:order-none">
+          <SearchBar />
         </div>
 
         {/* Cart and Login Section */}
-        <div className="w-full sm:w-auto flex items-center justify-center sm:justify-end gap-4 flex-shrink-0">
+        <div className="w-4/5 lg:w-auto flex items-center justify-center gap-4 flex-shrink-0">
           <div className="relative">
             <button
               onClick={() => setIsCartOpen(!isCartOpen)}
