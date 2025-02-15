@@ -73,7 +73,7 @@ export default function ProductCard() {
               <div
                 key={product.id}
                 onClick={() => handleProductClick(product)}
-                className="bg-white rounded-lg overflow-hidden shadow-lg group relative cursor-pointer"
+                className="bg-white rounded-lg overflow-hidden shadow-lg group relative cursor-pointer z-0"
               >
                 <div className="relative h-64">
                   <img

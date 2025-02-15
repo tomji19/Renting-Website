@@ -270,7 +270,7 @@ export default function WearablesAccessories() {
                       </button>
                       <button
                         onClick={(e) => handleAddToCart(e, product)}
-                        className="flex-1 bg-blue-500 text-white font-medium py-1.5 px-3 rounded-lg hover:bg-blue-600 flex items-center justify-center gap-1 text-xs"
+                        className="flex-1 bg-gradient-to-r from-blue-700 to-indigo-900 text-white font-medium py-1.5 px-3 rounded-lg hover:bg-blue-600 flex items-center justify-center gap-1 text-xs"
                       >
                         <ShoppingCart className="w-4 h-4" />
                         {isInCart ? "Added" : "Add to Cart"}

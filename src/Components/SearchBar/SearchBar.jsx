@@ -1,22 +1,40 @@
 import { useState, useEffect, useRef } from "react";
 import { Search } from "lucide-react";
-import { products } from "../HomeFeaturedProductsSection/HomeFeaturedProductsSection";
 import { useNavigate } from "react-router-dom";
-// import products from "../../data/products.json";
 
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [isSearching, setIsSearching] = useState(false);
+    const [allProducts, setAllProducts] = useState([]);
     const searchRef = useRef(null);
     const navigate = useNavigate();
 
+    // Fetch all products from API when component mounts
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch("http://localhost:5000/products");
+                if (!response.ok) {
+                    throw new Error("Failed to fetch products");
+                }
+                const data = await response.json();
+                setAllProducts(data);
+            } catch (error) {
+                console.error("Error fetching products:", error);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    // Filter products based on search term
     useEffect(() => {
         if (searchTerm.trim()) {
             setIsSearching(true);
 
             // Filter products starting with the entered letters (case insensitive)
-            const results = products.filter((product) =>
+            const results = allProducts.filter((product) =>
                 product.name.toLowerCase().startsWith(searchTerm.toLowerCase())
             );
 
@@ -25,7 +43,7 @@ const SearchBar = () => {
             setIsSearching(false);
             setSearchResults([]);
         }
-    }, [searchTerm]);
+    }, [searchTerm, allProducts]);
 
     // Close search suggestions when clicking outside
     useEffect(() => {
@@ -46,7 +64,6 @@ const SearchBar = () => {
         setIsSearching(false);
     };
     
-
     return (
         <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
             {/* Search Input */}

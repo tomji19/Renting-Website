@@ -234,7 +234,7 @@ export default function HomeFeaturedProductsSection() {
                       </button>
                       <button
                         onClick={(e) => handleAddToCart(e, product)}
-                        className="flex-1 bg-[#3b82f6] text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs"
+                        className="flex-1 bg-gradient-to-r from-blue-700 to-indigo-900 text-white font-bold py-1.5 px-3 rounded-lg hover:bg-orange-600 flex items-center justify-center gap-1 text-xs"
                       >
                         <ShoppingCart className="w-4 h-4" />
                         Add to Cart
