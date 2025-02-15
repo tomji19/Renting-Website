@@ -223,7 +223,7 @@ export default function Shop() {
           transition-all 
           duration-300
         `}>
-          <FilterSection />
+          <FilterSection /> 
         </div>
 
         {/* Product Grid */}
