@@ -15,6 +15,7 @@ import ThankYou from "./Pages/ThankYou/ThankYou";
 import Login from './Pages/Login/Login';
 import { CartProvider } from "./Components/CartContext/CartContext";
 import Account from "./Pages/Account/Account";
+import ProductCard from './Components/ProductCard/ProductCard';
 
 export default function App() {
   const router = createBrowserRouter([
@@ -69,6 +70,10 @@ export default function App() {
         {
           path: "/forgot-password",
           element: <ForgotPassword />,
+        },
+        {
+          path: "/card",
+          element: <ProductCard />,
         },
         {
           path: "*",

@@ -81,9 +81,9 @@ export default function FirstHeader() {
                             className="flex items-center gap-4 py-4 border-b"
                           >
                             <img
-                              src={item.image}
+                              src={item.image1}
                               alt={item.name}
-                              className="w-16 h-16 object-cover rounded"
+                              className="w-16 h-16 object-contain rounded"
                             />
                             <div className="flex-1">
                               <h4 className="text-sm font-medium">

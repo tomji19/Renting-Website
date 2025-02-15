@@ -1,11 +1,16 @@
 import React, { createContext, useContext, useState } from "react";
-// import products from "../../data/products.json";
 
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const normalizePrice = (price) => {
+    if (typeof price === 'number') return price;
+    // Handle string prices like "100 EGP" or "1,000 EGP"
+    return parseFloat(price.replace(/,/g, '').replace(' EGP', ''));
+  };
 
   const addToCart = (product) => {
     setCartItems((prevItems) => {
@@ -17,7 +22,14 @@ export function CartProvider({ children }) {
             : item
         );
       }
-      return [...prevItems, { ...product, quantity: 1 }];
+      return [
+        ...prevItems,
+        { 
+          ...product, 
+          quantity: 1, 
+          price: normalizePrice(product.price)
+        }
+      ];
     });
   };
 
@@ -41,10 +53,7 @@ export function CartProvider({ children }) {
   };
 
   const getTotalPrice = () => {
-    return cartItems.reduce((total, item) => {
-      const price = parseFloat(item.price.replace(/[^0-9.]/g, ""));
-      return total + price * item.quantity;
-    }, 0);
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
   return (

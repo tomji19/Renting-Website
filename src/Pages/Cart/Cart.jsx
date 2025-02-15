@@ -2,23 +2,21 @@ import React from "react";
 import { X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../Components/CartContext/CartContext";
-// import products from "../../data/products.json";
 
 export default function Cart() {
   const navigate = useNavigate();
-  const { cartItems, removeFromCart, updateQuantity, setIsCartOpen } =
-    useCart();
+  const { cartItems, removeFromCart, updateQuantity, setIsCartOpen } = useCart();
 
   // Calculate order summary
-  const subtotal = cartItems.reduce((sum, item) => {
-    // Convert price string to number by removing 'EGP' and ',' then parsing
-    const price = parseFloat(item.price.replace(/,/g, "").replace(" EGP", ""));
-    return sum + price * item.quantity;
-  }, 0);
+  const subtotal = cartItems.reduce((sum, item) => 
+    sum + item.price * item.quantity, 0
+  );
 
   const shipping = 35.0;
   const tax = subtotal * 0.14; // Egypt's VAT rate
   const total = subtotal + shipping + tax;
+
+  const formatPrice = (price) => `${price.toLocaleString()} EGP`;
 
   // Handle quantity change
   const handleQuantityChange = (itemId, newQuantity) => {
@@ -29,7 +27,7 @@ export default function Cart() {
 
   // Handle checkout
   const handleCheckout = () => {
-    setIsCartOpen(false); // Close the mini cart
+    setIsCartOpen(false);
     navigate("/checkout");
   };
 
@@ -61,16 +59,16 @@ export default function Cart() {
                   >
                     <div className="flex gap-4">
                       <img
-                        src={item.image}
+                        src={item.image1}
                         alt={item.name}
-                        className="w-40 h-40 object-cover rounded-md"
+                        className="w-40 h-40 object-contain rounded-md"
                       />
                       <div className="flex-grow">
                         <div className="flex justify-between">
                           <div>
                             <h3 className="text-xl font-medium">{item.name}</h3>
                             <p className="text-lg font-semibold text-[#1B6392] mt-2">
-                              {item.price}
+                              {formatPrice(item.price)}
                             </p>
                           </div>
                           <button
@@ -112,21 +110,21 @@ export default function Cart() {
                 <div className="space-y-4">
                   <div className="flex justify-between text-gray-600">
                     <span>Subtotal</span>
-                    <span>{subtotal.toLocaleString()} EGP</span>
+                    <span>{formatPrice(subtotal)}</span>
                   </div>
                   <div className="flex justify-between text-gray-600">
                     <span>Shipping estimate</span>
-                    <span>{shipping.toLocaleString()} EGP</span>
+                    <span>{formatPrice(shipping)}</span>
                   </div>
                   <div className="flex justify-between text-gray-600">
                     <span>Tax estimate (14%)</span>
-                    <span>{tax.toLocaleString()} EGP</span>
+                    <span>{formatPrice(tax)}</span>
                   </div>
                   <div className="border-t pt-4 mt-4">
                     <div className="flex justify-between font-semibold">
                       <span className="text-xl">Order total</span>
                       <span className="text-[#1B6392]">
-                        {total.toLocaleString()} EGP
+                        {formatPrice(total)}
                       </span>
                     </div>
                   </div>

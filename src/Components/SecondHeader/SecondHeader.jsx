@@ -61,96 +61,26 @@ export default function SecondHeader() {
                 : "lg:flex lg:justify-start lg:space-x-8"
             }`}
           >
-            <Link to="/shop" className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+            <Link
+              to="/shop"
+              className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font"
+            >
               Shop
             </Link>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
               Laptops
             </div>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
-              Accessories
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              Gaming Consoles
             </div>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
-              Mobiles
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              Smartphones
             </div>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
-              Tablets
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              Wearables & Accessories
             </div>
             <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
-              Gaming
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
-              Brands
-              <svg
-                className="ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 9l-7 7-7-7"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              PC Components
             </div>
           </div>
         </nav>
