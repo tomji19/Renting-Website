@@ -9,9 +9,6 @@ import fourth from "../../assets/fourth.png";
 import fifth from "../../assets/fifth.png";
 import sixth from "../../assets/sixth.png";
 import seventh from "../../assets/seventh.png";
-// import products from "../../data/products.json";
-
-
 
 export const products = [
   {
