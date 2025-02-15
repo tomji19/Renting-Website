@@ -9,7 +9,7 @@
             "image3": "https://m.media-amazon.com/images/I/71HSDFQr+qL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/71vwCE+PEQL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/61AJnT8HmdL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Apple",
             "description": "The latest MacBook Air featuring the M3 chip, offering a balance of performance, battery life, and design. Ideal for productivity, browsing, and light gaming.",
             "rating": {
@@ -28,7 +28,7 @@
             "image3": "https://m.media-amazon.com/images/I/61RoiavsL5L._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/61uSO7rfGaL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/51hwiEDXaAL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Acer",
             "description": "A budget-friendly laptop with a bright display, comfortable keyboard, and strong performance packaged in a sleek chassis.",
             "rating": {
@@ -47,7 +47,7 @@
             "image3": "https://m.media-amazon.com/images/I/51FZdTaq7ZL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/51V5btVb++L._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/412SYatN2rL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Asus",
             "description": "Features a gorgeous OLED display, powerful Intel Core Ultra 7 processor, and almost 16 hours of battery life.",
             "rating": {
@@ -66,7 +66,7 @@
             "image3": "https://m.media-amazon.com/images/I/81Va3LUGK-L._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/815wvxzN7QL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/712-NgWrGmL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "HP",
             "description": "A premium 2-in-1 convertible laptop with a compact design, long battery life, and Intel's Lunar Lake processors for productivity tasks.",
             "rating": {
@@ -85,7 +85,7 @@
             "image3": "https://m.media-amazon.com/images/I/51ompV01IZL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/613ALU43vxL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/419HNTdzJPL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Lenovo",
             "description": "Incredibly long battery life, bright screen, great keyboard, and solid performance with Qualcomm Snapdragon X Elite processor.",
             "rating": {
@@ -104,7 +104,7 @@
             "image3": "https://m.media-amazon.com/images/I/61ZLrp7EpDS._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/61T5zARq8kS._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/615mVhcNe+S._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Dell",
             "description": "A sleek and powerful ultrabook with a stunning 13.4-inch display, Intel Core i7 processor, and a comfortable keyboard.",
             "rating": {
@@ -123,7 +123,7 @@
             "image3": "https://m.media-amazon.com/images/I/61c3pq8bJVL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/71ecmiCLxBL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/61W+btHzHPL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Microsoft",
             "description": "Features the Snapdragon X Elite chip, offering a balance of performance and portability with a high-resolution touchscreen.",
             "rating": {
@@ -142,7 +142,7 @@
             "image3": "https://m.media-amazon.com/images/I/71B5NmzrFrL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/41xNJV6yyWL._AC_.jpg",
             "image5": "https://m.media-amazon.com/images/I/31s5JkxeQFL._AC_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Asus",
             "description": "A high-performance gaming laptop with advanced cooling, NVIDIA RTX graphics, and a 17.3-inch high-refresh-rate display.",
             "rating": {
@@ -161,7 +161,7 @@
             "image3": "https://m.media-amazon.com/images/I/71HSDFQr+qL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/81yWEicPOGL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/71vwCE+PEQL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Apple",
             "description": "Designed for creative professionals, featuring the M3 Max chip, a 16-inch Retina display, and exceptional performance.",
             "rating": {
@@ -180,7 +180,7 @@
             "image3": "https://m.media-amazon.com/images/I/51qUjs51GmL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/51AidrngLgL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/41CKtfYh0BL._AC_SX679_.jpg",
-            "category": "laptops",
+            "category": "Laptops",
             "brand": "Lenovo",
             "description": "A dual-screen laptop with a versatile design, Intel Core i7 processor, and a unique hinge mechanism for various modes.",
             "rating": {
@@ -196,7 +196,7 @@
             "image": "playstation-5.jpg",
             "image1": "https://m.media-amazon.com/images/I/51KBX8ycq1L._AC_SX679_.jpg",
             "image2": "https://m.media-amazon.com/images/I/31dVIilKX+L._AC_.jpg",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Sony",
             "description": "The PlayStation 5 offers a powerful gaming experience with its custom SSD, ray tracing capabilities, and a vast library of exclusive titles.",
             "rating": {
@@ -215,7 +215,7 @@
             "image3": "https://f.nooncdn.com/p/v1633343875/N40635116A_5.jpg?format=avif&width=240",
             "image4": "https://f.nooncdn.com/p/v1633343874/N40635116A_3.jpg?format=avif&width=240",
             "image5": "https://f.nooncdn.com/p/v1633343875/N40635116A_7.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Microsoft",
             "description": "The Xbox Series X is the most powerful and fastest gaming console available today, surpassing the PlayStation 5 in technical specifications. It boasts impressive graphics capabilities, native 4K resolution, and ultra-fast load times, along with extensive backward compatibility with games from previous generations.",
             "rating": {
@@ -234,7 +234,7 @@
             "image3": "https://m.media-amazon.com/images/I/71UiJ0O6vTL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/61WRvwRMERL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/61kUrTHMTBL._AC_SX679_.jpg",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Nintendo",
             "description": "The Nintendo Switch OLED Model features a vibrant 7-inch OLED screen, enhanced audio, and a wide adjustable stand, providing an improved handheld gaming experience.",
             "rating": {
@@ -251,7 +251,7 @@
             "image1": "https://f.nooncdn.com/p/v1667912873/N53364276A_1.jpg?format=avif&width=240",
             "image2": "https://f.nooncdn.com/p/v1667912873/N53364276A_2.jpg?format=avif&width=240",
             "image3": "https://f.nooncdn.com/p/v1667912873/N53364276A_3.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Microsoft",
             "description": "The Xbox Series S is a compact and affordable console that offers next-gen performance at a lower resolution, ideal for budget-conscious gamers.",
             "rating": {
@@ -270,7 +270,7 @@
             "image3": "https://f.nooncdn.com/p/v1596038894/N11748422A_2.jpg?format=avif&width=240",
             "image4": "https://f.nooncdn.com/p/v1596038895/N11748422A_4.jpg?format=avif&width=240",
             "image5": "https://f.nooncdn.com/p/pnsku/N11748422A/45/_/1717399127/99dd7705-7e05-4469-ad63-242b13011703.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Sony",
             "description": "The PlayStation 4 Pro enhances gaming with 4K resolution and improved performance, supporting a vast library of games.",
             "rating": {
@@ -289,7 +289,7 @@
             "image3": "https://m.media-amazon.com/images/I/61VLGzukBLL._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/41aAOquysoL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/616KSrBbeJL._AC_SX679_.jpg",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Nintendo",
             "description": "The Nintendo Switch Lite is a handheld-only version of the Switch, offering a compact and lightweight design for gaming on the go.",
             "rating": {
@@ -305,7 +305,7 @@
             "image": "steam-deck.jpg",
             "image1": "https://f.nooncdn.com/p/pnsku/N70023586V/45/_/1699883752/cadb47f7-7ee2-4f89-9244-bf9e8f5cf605.jpg?format=avif&width=240",
             "image2": "https://f.nooncdn.com/p/pnsku/N70023586V/45/_/1699883761/8c0fa938-679b-417d-bc73-06fe47a5d02a.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Valve",
             "description": "The Steam Deck is a handheld gaming PC that allows you to play your Steam library on the go, featuring a 7-inch touchscreen and customizable controls.",
             "rating": {
@@ -323,7 +323,7 @@
             "image2": "https://f.nooncdn.com/p/v1669382892/N40633048A_3.jpg?format=avif&width=240",
             "image3": "https://f.nooncdn.com/p/v1666961544/N40633048A_4.jpg?format=avif&width=240",
             "image4": "https://f.nooncdn.com/p/v1669382892/N40633048A_8.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Sony",
             "description": "The PlayStation 5 Digital Edition offers the same performance as the standard PS5 but without a disc drive, catering to gamers who prefer digital downloads.",
             "rating": {
@@ -340,7 +340,7 @@
             "image1": "https://f.nooncdn.com/p/v1667912873/N53364276A_1.jpg?format=avif&width=240",
             "image2": "https://f.nooncdn.com/p/v1667912873/N53364276A_2.jpg?format=avif&width=240",
             "image3": "https://f.nooncdn.com/p/v1667912873/N53364276A_3.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Microsoft",
             "description": "The Xbox One X, released in 2017, is an impressive upgrade from its predecessor, boasting notable enhancements such as 4K graphics, HDR support, and six teraflops of computing power.",
             "rating": {
@@ -355,7 +355,7 @@
             "price": 399,
             "image": "nintendo-switch-2.jpg",
             "image1": "https://f.nooncdn.com/p/v1610021908/N43500146A_1.jpg?format=avif&width=240",
-            "category": "gaming consoles",
+            "category": "Gaming Consoles",
             "brand": "Nintendo",
             "description": "The Nintendo Switch 2, announced in January 2025, features a similar hybrid design to its predecessor with detachable controllers and a TV dock, and is planned for release later in 2025.",
             "rating": {
@@ -374,7 +374,7 @@
             "image3": "https://m.media-amazon.com/images/I/61DjMd76QnL._AC_UL480_FMwebp_QL65_.jpg",
             "image4": "https://m.media-amazon.com/images/I/71CSc3M2AGL._AC_UL480_FMwebp_QL65_.jpg",
             "image5": "https://m.media-amazon.com/images/I/61-251PVEZL._AC_UL480_FMwebp_QL65_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Apple",
             "description": "The iPhone 16 offers a balance of performance and affordability, featuring the A18 chip, improved battery life, and new AI capabilities.",
             "rating": {
@@ -389,7 +389,7 @@
             "price": 899,
             "image": "iphone-16-plus.jpg",
             "image1": "https://m.media-amazon.com/images/I/61-251PVEZL._AC_SX679_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Apple",
             "description": "The iPhone 16 Plus provides a larger display and extended battery life, making it ideal for users seeking enhanced media consumption.",
             "rating": {
@@ -408,7 +408,7 @@
             "image3": "https://m.media-amazon.com/images/I/61uczyTwwgL._AC_UL480_FMwebp_QL65_.jpg",
             "image4": "https://m.media-amazon.com/images/I/619izXQuEjL._AC_UL480_FMwebp_QL65_.jpg",
             "image5": "https://m.media-amazon.com/images/I/614qofPV+eL._AC_UL480_FMwebp_QL65_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Apple",
             "description": "The iPhone 16 Pro features a superior camera system with a 5x telephoto lens, catering to photography enthusiasts.",
             "rating": {
@@ -424,7 +424,7 @@
             "image": "iphone-16-pro-max.jpg",
             "image1": "https://m.media-amazon.com/images/I/61nEkHocR8L._AC_UL480_FMwebp_QL65_.jpg",
             "image2": "https://m.media-amazon.com/images/I/61AFDN06yqL._AC_UL480_FMwebp_QL65_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Apple",
             "description": "The iPhone 16 Pro Max offers a massive 6.9-inch display and impressive battery life, ideal for users seeking a premium experience.",
             "rating": {
@@ -443,7 +443,7 @@
             "image3": "https://f.nooncdn.com/p/pnsku/N70035206V/45/_/1707891796/d902fe33-5ee0-4416-b89e-a262eb5a119d.jpg?format=avif&width=240",
             "image4": "https://f.nooncdn.com/p/pnsku/N70035206V/45/_/1707891869/2f8d9150-bfef-4739-8e7c-5eca76e3865f.jpg?format=avif&width=240",
             "image5": "https://f.nooncdn.com/p/pnsku/N70035206V/45/_/1719045918/5c8e18fa-bdc2-4e01-a3b7-995ab66345f0.jpg?format=avif&width=240",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Samsung",
             "description": "The Galaxy S25 Ultra boasts a 200MP main camera, Galaxy AI integration, and the Snapdragon 8 Elite chipset for top-tier performance.",
             "rating": {
@@ -459,7 +459,7 @@
             "image": "pixel-9-pro.jpg",
             "image1": "https://m.media-amazon.com/images/I/61CE6tNfVSL._AC_UL480_FMwebp_QL65_.jpg",
             "image2": "https://m.media-amazon.com/images/I/61GZZIg80mL._AC_UL480_FMwebp_QL65_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Google",
             "description": "The Pixel 9 Pro offers advanced AI-based picture-enhancing capabilities, providing users with exceptional photography experiences.",
             "rating": {
@@ -478,7 +478,7 @@
             "image3": "https://m.media-amazon.com/images/I/61AplC-qoML._AC_SX679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/61fVA2RaThL._AC_SX679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/51u6t1U-86L._AC_SX679_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "OnePlus",
             "description": "The OnePlus 13 delivers killer specs at a surprisingly low price, reconnecting with its roots to offer exceptional value.",
             "rating": {
@@ -495,7 +495,7 @@
             "image1": "https://m.media-amazon.com/images/I/513fG2LYvIL._AC_UL480_FMwebp_QL65_.jpg",
             "image2": "https://m.media-amazon.com/images/I/51nIVPEqa-L._AC_UL480_FMwebp_QL65_.jpg",
             "image3": "https://m.media-amazon.com/images/I/512qOLRBL8L._AC_UL480_FMwebp_QL65_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Xiaomi",
             "description": "The Xiaomi 14 Ultra features a sleek design, powerful performance, and an impressive camera system for photography enthusiasts.",
             "rating": {
@@ -512,7 +512,7 @@
             "image1": "https://m.media-amazon.com/images/I/61sIzvW9g6L._AC_UL480_FMwebp_QL65_.jpg",
             "image2": "https://m.media-amazon.com/images/I/61UI7GS5NaL._AC_UL480_FMwebp_QL65_.jpg",
             "image3": "https://m.media-amazon.com/images/I/518W2EY7-7L._AC_UL480_FMwebp_QL65_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Oppo",
             "description": "The Oppo Find X8 Pro offers a stunning display, fast charging capabilities, and a versatile camera setup for creative users.",
             "rating": {
@@ -531,7 +531,7 @@
             "image3": "https://m.media-amazon.com/images/I/51-WV93DA0L._AC_SY679_.jpg",
             "image4": "https://m.media-amazon.com/images/I/61N2GZ9fpaL._AC_SY679_.jpg",
             "image5": "https://m.media-amazon.com/images/I/61I45-XGgeL._AC_SX679_.jpg",
-            "category": "smartphones",
+            "category": "Smartphones",
             "brand": "Google",
             "description": "The Pixel 9 Pro XL provides a larger display and enhanced battery life, coupled with Google's advanced AI features.",
             "rating": {
@@ -665,7 +665,7 @@
             "image5": "https://m.media-amazon.com/images/I/71xos6d0u9L._AC_SX522_.jpg",
             "category": "Wearables & Accessories",
             "brand": "Anker",
-            "description": "The Anker 733 Power Bank is a versatile portable charger with a 10,000mAh capacity, capable of charging phones and small laptops.",
+            "description": "The Anker 733 Power Bank is a versatile portable charger with a 10,000mAh capacity, capable of charging phones and small Laptops.",
             "rating": {
                 "score": 4.8,
                 "reviews": 4000,
@@ -883,7 +883,7 @@
             "image5": "https://m.media-amazon.com/images/I/71l4WeR64CL._AC_SX522_.jpg",
             "category": "Wearables & Accessories",
             "brand": "Anker",
-            "description": "A high-capacity 24,000mAh power bank with 140W fast charging, capable of charging laptops, tablets, and smartphones multiple times.",
+            "description": "A high-capacity 24,000mAh power bank with 140W fast charging, capable of charging Laptops, tablets, and Smartphones multiple times.",
             "rating": {
                 "score": 4.9,
                 "reviews": 4000,

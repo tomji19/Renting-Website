@@ -3,11 +3,11 @@ import { Heart, ShoppingCart, Filter } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../Components/CartContext/CartContext";
 
-export default function Shop() {
+export default function Smartphones() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("Smartphones");
   const [selectedStockStatus, setSelectedStockStatus] = useState("");
   const [priceRange, setPriceRange] = useState({ min: "", max: "" });
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);

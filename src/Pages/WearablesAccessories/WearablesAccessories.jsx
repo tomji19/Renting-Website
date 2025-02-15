@@ -3,11 +3,13 @@ import { Heart, ShoppingCart, Filter } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../Components/CartContext/CartContext";
 
-export default function Shop() {
+export default function WearablesAccessories() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(
+    "Wearables & Accessories"
+  );
   const [selectedStockStatus, setSelectedStockStatus] = useState("");
   const [priceRange, setPriceRange] = useState({ min: "", max: "" });
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
@@ -46,8 +48,10 @@ export default function Shop() {
   };
 
   const filteredProducts = products.filter((product) => {
-    const isCategoryMatch = !selectedCategory || product.category === selectedCategory;
-    const isStockStatusMatch = !selectedStockStatus || 
+    const isCategoryMatch =
+      !selectedCategory || product.category === selectedCategory;
+    const isStockStatusMatch =
+      !selectedStockStatus ||
       (selectedStockStatus === "In Stock" && product.stock > 0) ||
       (selectedStockStatus === "Out of Stock" && product.stock === 0);
     const isPriceRangeMatch =
@@ -63,7 +67,7 @@ export default function Shop() {
           <h2 className="text-lg font-semibold mb-6 text-gray-800 border-b border-gray-100 pb-4">
             Filters
           </h2>
-          
+
           <div className="space-y-8">
             {/* Categories Section */}
             <div className="transform transition-all duration-300">
@@ -72,28 +76,38 @@ export default function Shop() {
                 Categories
               </h3>
               <div className="space-y-3">
-                {["All", "Laptops", "Gaming Consoles", "Smartphones", "Wearables & Accessories", "PC Components"].map(
-                  (category) => (
-                    <label 
-                      key={category} 
-                      className="flex items-center group cursor-pointer"
-                    >
-                      <input
-                        type="radio"
-                        name="category"
-                        checked={selectedCategory === (category === "All" ? "" : category)}
-                        onChange={() => setSelectedCategory(category === "All" ? "" : category)}
-                        className="w-4 h-4 text-[#FA8232] border-gray-300 focus:ring-[#FA8232] transition-all duration-300"
-                      />
-                      <span className="ml-3 text-sm text-gray-600 group-hover:text-[#FA8232] transition-colors duration-300">
-                        {category}
-                      </span>
-                    </label>
-                  )
-                )}
+                {[
+                  "All",
+                  "Laptops",
+                  "Gaming Consoles",
+                  "Smartphones",
+                  "Wearables & Accessories",
+                  "PC Components",
+                ].map((category) => (
+                  <label
+                    key={category}
+                    className="flex items-center group cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="category"
+                      checked={
+                        selectedCategory ===
+                        (category === "All" ? "" : category)
+                      }
+                      onChange={() =>
+                        setSelectedCategory(category === "All" ? "" : category)
+                      }
+                      className="w-4 h-4 text-[#FA8232] border-gray-300 focus:ring-[#FA8232] transition-all duration-300"
+                    />
+                    <span className="ml-3 text-sm text-gray-600 group-hover:text-[#FA8232] transition-colors duration-300">
+                      {category}
+                    </span>
+                  </label>
+                ))}
               </div>
             </div>
-  
+
             {/* Stock Status Section */}
             <div className="transform transition-all duration-300">
               <h3 className="text-sm font-medium text-gray-700 mb-4 flex items-center">
@@ -102,15 +116,19 @@ export default function Shop() {
               </h3>
               <div className="space-y-3">
                 {["All", "In Stock", "Out of Stock"].map((status) => (
-                  <label 
-                    key={status} 
+                  <label
+                    key={status}
                     className="flex items-center group cursor-pointer"
                   >
                     <input
                       type="radio"
                       name="stockStatus"
-                      checked={selectedStockStatus === (status === "All" ? "" : status)}
-                      onChange={() => setSelectedStockStatus(status === "All" ? "" : status)}
+                      checked={
+                        selectedStockStatus === (status === "All" ? "" : status)
+                      }
+                      onChange={() =>
+                        setSelectedStockStatus(status === "All" ? "" : status)
+                      }
                       className="w-4 h-4 text-[#FA8232] border-gray-300 focus:ring-[#FA8232] transition-all duration-300"
                     />
                     <span className="ml-3 text-sm text-gray-600 group-hover:text-[#FA8232] transition-colors duration-300">
@@ -120,7 +138,7 @@ export default function Shop() {
                 ))}
               </div>
             </div>
-  
+
             {/* Price Range Section */}
             <div className="transform transition-all duration-300">
               <h3 className="text-sm font-medium text-gray-700 mb-4 flex items-center">
@@ -187,13 +205,15 @@ export default function Shop() {
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* Sidebar */}
-        <div className={`
+        <div
+          className={`
           md:w-1/4 
-          ${isMobileFilterOpen ? 'block' : 'hidden'} 
+          ${isMobileFilterOpen ? "block" : "hidden"} 
           md:block 
           transition-all 
           duration-300
-        `}>
+        `}
+        >
           <FilterSection />
         </div>
 
@@ -258,8 +278,8 @@ export default function Shop() {
                     </div>
                   </div>
                 </div>
-              )}
-            )}
+              );
+            })}
           </div>
         </div>
       </div>

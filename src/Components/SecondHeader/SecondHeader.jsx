@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import products from "../../data/products.json";
 
 export default function SecondHeader() {
@@ -61,27 +61,42 @@ export default function SecondHeader() {
                 : "lg:flex lg:justify-start lg:space-x-8"
             }`}
           >
-            <Link
+            <NavLink
               to="/shop"
-              className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font"
+              className={({ isActive }) => `text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font ${isActive ? 'bg-[#FA8232]' : ''}`}
             >
               Shop
-            </Link>
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+            </NavLink>
+            <NavLink
+              to="/laptops"
+              className={({ isActive }) => `text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font ${isActive ? 'bg-[#FA8232]' : ''}`}
+            >
               Laptops
-            </div>
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+            </NavLink>
+            <NavLink
+              to="/gamingconsoles"
+              className={({ isActive }) => `text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font ${isActive ? 'bg-[#FA8232]' : ''}`}
+            >
               Gaming Consoles
-            </div>
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+            </NavLink>
+            <NavLink
+              to="/smartphones"
+              className={({ isActive }) => `text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font ${isActive ? 'bg-[#FA8232]' : ''}`}
+            >
               Smartphones
-            </div>
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+            </NavLink>
+            <NavLink
+              to="/wearablesaccessories"
+              className={({ isActive }) => `text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font ${isActive ? 'bg-[#FA8232]' : ''}`}
+            >
               Wearables & Accessories
-            </div>
-            <div className="text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font">
+            </NavLink>
+            <NavLink
+              to="/pccomponents"
+              className={({ isActive }) => `text-white flex items-center text-3xl sm:text-3xl md:text-3xl lg:text-xl body-font ${isActive ? 'bg-[#FA8232]' : ''}`}
+            >
               PC Components
-            </div>
+            </NavLink>
           </div>
         </nav>
       </div>

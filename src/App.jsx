@@ -12,10 +12,16 @@ import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
 import Cart from "./Pages/Cart/Cart";
 import Checkout from "./Pages/Checkout/Checkout";
 import ThankYou from "./Pages/ThankYou/ThankYou";
-import Login from './Pages/Login/Login';
+import Login from "./Pages/Login/Login";
 import { CartProvider } from "./Components/CartContext/CartContext";
 import Account from "./Pages/Account/Account";
-import ProductCard from './Components/ProductCard/ProductCard';
+import ProductCard from "./Components/ProductCard/ProductCard";
+import Laptops from "./Pages/Laptops/Laptops";
+import Gaming from "./Pages/Gaming/Gaming";
+import { Smartphone } from "lucide-react";
+import Smartphones from "./Pages/Smartphones/Smartphones";
+import WearablesAccessories from "./Pages/WearablesAccessories/WearablesAccessories";
+import PCComponents from "./Pages/PCComponents/PCComponents";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -30,6 +36,26 @@ export default function App() {
         {
           path: "/shop",
           element: <Shop />,
+        },
+        {
+          path: "/laptops",
+          element: <Laptops />,
+        },
+        {
+          path: "/gamingconsoles",
+          element: <Gaming />,
+        },
+        {
+          path: "/smartphones",
+          element: <Smartphones />,
+        },
+        {
+          path: "/wearablesaccessories",
+          element: <WearablesAccessories />,
+        },
+        {
+          path: "/pccomponents",
+          element: <PCComponents />,
         },
         {
           path: "/cart",
@@ -84,7 +110,6 @@ export default function App() {
   ]);
 
   return (
-    
     <CartProvider>
       <RouterProvider router={router} />
     </CartProvider>
