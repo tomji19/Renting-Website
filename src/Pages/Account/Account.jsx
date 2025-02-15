@@ -110,7 +110,7 @@ export default function Account() {
               <div className="space-y-4 lg:space-y-6">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                   <h2 className="text-xl lg:text-2xl font-semibold">
-                    Welcome back, User!
+                    Welcome back, Youssef!
                   </h2>
                   <span className="text-sm text-gray-500">
                     Member since Jan 2024
