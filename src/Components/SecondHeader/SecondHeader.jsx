@@ -87,7 +87,7 @@ export default function EyeCatchingHeader() {
   };
 
   return (
-    <header className="relative z-10 overflow-hidden">
+    <header className="relative z-1 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 shadow-xl">
         <div className="absolute inset-0 opacity-10">
@@ -105,7 +105,7 @@ export default function EyeCatchingHeader() {
           </div>
           
           {/* Navigation Links */}
-          <nav className="flex">
+          <nav className="flex">  
             {categories.map((category, index) => (
               <NavLink
                 key={index}

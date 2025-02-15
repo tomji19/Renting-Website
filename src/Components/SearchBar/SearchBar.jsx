@@ -63,11 +63,11 @@ const SearchBar = () => {
         setSearchTerm("");
         setIsSearching(false);
     };
-    
+
     return (
-        <div ref={searchRef} className="relative w-full max-w-lg mx-auto">
+        <div ref={searchRef} className="-400 mx-auto">
             {/* Search Input */}
-            <div className="relative w-full max-w-5xl mx-auto ">
+            {/* <div className="relative w-full max-w-5xl mx-auto ">
                 <input
                     type="text"
                     value={searchTerm}
@@ -76,7 +76,26 @@ const SearchBar = () => {
                     className="w-full px-6 py-3 pl-16 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-xl"
                 />
                 <Search className="absolute left-6 top-4 h-7 w-7 text-gray-500" />
+            </div> */}
+
+
+
+            <div className="w-full lg:w-1/2 order-3 lg:order-none mx-auto">
+                <div className="relative">
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        placeholder="Search for products..."
+                        className="w-full py-2 pl-10 pr-4 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors"
+                    />
+                    <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                        <Search className="h-5 w-5" />
+                    </div>
+                </div>
             </div>
+
+
 
             {/* Search Results Dropdown */}
             {isSearching && searchResults.length > 0 && (
