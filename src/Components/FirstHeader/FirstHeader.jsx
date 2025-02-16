@@ -16,7 +16,7 @@ export default function FirstHeader() {
   } = useCart();
 
   return (
-    <header className="bg-white shadow-sm py-4 px-4 lg:px-8 relative">
+    <header className="bg-white shadow-sm py-4 px-4 lg:px-8 relative z-50">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
         {/* Logo Section */}
         <div className="w-full lg:w-auto flex items-center justify-center lg:justify-start">

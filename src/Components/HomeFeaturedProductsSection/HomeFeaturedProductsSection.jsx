@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Heart, ShoppingCart } from "lucide-react";
+import { Zap } from "lucide-react";
 import { useCart } from "../../Components/CartContext/CartContext";
 import tozo1 from "../../assets/tozo1.png";
 import airpod from "../../assets/airpod.png";
@@ -9,6 +10,7 @@ import fourth from "../../assets/fourth.png";
 import fifth from "../../assets/fifth.png";
 import sixth from "../../assets/sixth.png";
 import seventh from "../../assets/seventh.png";
+import { NavLink } from "react-router-dom";
 
 export const products = [
   {
@@ -124,54 +126,54 @@ export default function HomeFeaturedProductsSection() {
     addToCart(product);
   };
 
-  
+
 
   return (
     <section className="py-5 px-4 sm:px-8 lg:px-16">
       <div className="min-h-screen">
         <div className="flex flex-col lg:flex-row lg:gap-7">
           {/* Promotional Banner */}
-          <div className="hidden lg:block lg:w-1/4">
-            <div className="h-full flex flex-col gap-10">
-              {/* Top Section */}
-              <div className="h-[58%] p-6 flex flex-col items-center justify-center text-center bg-[#FFF8E7] rounded-lg">
-                <img
-                  src={airpod}
-                  alt="Wireless Earbuds"
-                  className="w-72 h-72 object-contain mb-4"
-                />
-                <h2 className="text-3xl font-semibold heading-font mb-2">
-                  Xiaomi True Wireless Earbuds
-                </h2>
-                <p className="text-gray-600 text-md mb-3">
-                  Escape the noise. It's time to hear the magic with Xiaomi
-                  Earbuds.
-                </p>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-md text-gray-600">Only for:</span>
-                  <span className="font-bold">2499 EGP</span>
-                </div>
-                <button className="w-full bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition-colors">
-                  SHOP NOW →
-                </button>
+          {/* Promotional Section - Adjusted Width */}
+          <div className="hidden lg:flex flex-col w-[26%] gap-5 mt-12">
+            {/* First Promotion */}
+            <div className="p-5 py-10 flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#0A1F33] to-[#112D46] text-white rounded-lg shadow-lg border border-blue-500/30">
+              <img
+                src={airpod}
+                alt="Wireless Earbuds"
+                className="w-36 h-36 object-contain mb-3 drop-shadow-lg"
+              />
+              <h2 className="text-lg font-semibold tracking-wide mb-3 text-gray-100">
+                Xiaomi True Wireless Earbuds
+              </h2>
+              <p className="text-gray-400 text-xs mb-2">
+                Escape the noise. Experience premium sound.
+              </p>
+              <div className="flex items-center gap-1 mb-4">
+                <span className="text-xs text-gray-400">Only for:</span>
+                <span className="font-bold text-blue-400 text-sm">2499 EGP</span>
               </div>
+              <button className="w-full py-3 mt-3 bg-gradient-to-r from-[#004AAD] to-[#1D267D] text-white px-3 rounded-md shadow-md text-xs hover:from-[#1D267D] hover:to-[#004AAD] transition-all duration-300 transform hover:scale-105">
+                SHOP NOW →
+              </button>
+            </div>
 
-              {/* Bottom Section */}
-              <div className="h-[38%] bg-[#1B2E3C] text-white p-6 flex flex-col items-center justify-center text-center rounded-lg">
-                <h3 className="text-sm font-semibold mb-2 bg-white bg-opacity-15 px-6 py-2">
-                  SUMMER SALES
-                </h3>
-                <div className="text-3xl font-bold mb-2">37% DISCOUNT</div>
-                <p className="text-sm mb-4">
-                  only for <span className="text-blue-400">SmartPhone</span>{" "}
-                  product.
-                </p>
-                <button className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors">
-                  SHOP NOW →
-                </button>
+            {/* Second Promotion - Below the First */}
+            <div className="p-5 py-10 bg-gradient-to-t from-[#0A1F33] to-[#112D46] text-white text-center rounded-lg shadow-lg border border-indigo-500/30">
+              <h3 className="text-xs font-semibold mb-4 px-4 py-1 bg-white bg-opacity-10 backdrop-blur-md rounded-md text-gray-300">
+                SUMMER SALES
+              </h3>
+              <div className="text-2xl font-extrabold mb-3 text-gray-100 tracking-widest">
+                37% OFF
               </div>
+              <p className="text-xs mb-6 text-gray-400">
+                Available for <span className="text-blue-400">SmartPhone</span> products.
+              </p>
+              <button className="w-full py-3 bg-gradient-to-r from-[#004AAD] to-[#1D267D] text-white px-3 rounded-md shadow-md text-xs hover:from-[#1D267D] hover:to-[#004AAD] transition-all duration-300 transform hover:scale-105">
+                SHOP NOW →
+              </button>
             </div>
           </div>
+
 
           {/* Product Grid */}
           <div className="w-full">
